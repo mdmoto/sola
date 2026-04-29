@@ -72,7 +72,7 @@ export default function Projects() {
           >
             <h1 className="text-4xl md:text-6xl font-bold">项目案例</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              从普吉岛的海景别墅，到清迈的山居小屋。我们为上千个泰国非都会区家庭与精品商业提供了可靠的绿色能源。
+              从芭提雅的海景别墅，到清迈的山居小屋。我们为上千个泰国非都会区家庭与精品商业提供了可靠的绿色能源。
             </p>
           </motion.div>
         </div>

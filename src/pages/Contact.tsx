@@ -58,7 +58,7 @@ export default function Contact() {
             >
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold text-gray-900">本地化服务团队</h2>
-                <p className="text-gray-600 text-lg">我们的专家团队常驻清迈与普吉，能够快速响应泰国北部及沿海度假区的光伏需求。</p>
+                <p className="text-gray-600 text-lg">我们的专家团队常驻清迈芭提雅，能够快速响应泰国北部及沿海度假区的光伏需求。</p>
               </div>
 
               <div className="space-y-8">
@@ -68,7 +68,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">清迈总部 (HQ)</h3>
-                    <p className="text-gray-600 leading-relaxed">Nimmanhaemin Road,<br />Chiang Mai 50200, Thailand</p>
+                    <p className="text-gray-600 leading-relaxed">83 2 Suriyawong 5 Rd,<br />Mueang Chiang Mai 50000, Thailand</p>
                   </div>
                 </div>
 
@@ -77,8 +77,8 @@ export default function Contact() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">普吉岛分部</h3>
-                    <p className="text-gray-600 leading-relaxed">Rawai, Mueang Phuket District,<br />Phuket 83130, Thailand</p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">芭提雅分部</h3>
+                    <p className="text-gray-600 leading-relaxed">Rawai, Mueang Phuket District,<br />Pattaya 83130, Thailand</p>
                   </div>
                 </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">联系电话</h3>
-                    <p className="text-gray-600 leading-relaxed">+66 8 1234 5678<br />(支持中/英/泰三语)</p>
+                    <p className="text-gray-600 leading-relaxed">+66 6 2345 8238<br />(支持中/英/泰三语)</p>
                   </div>
                 </div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">电子邮箱</h3>
-                    <p className="text-gray-600 leading-relaxed">contact@colasola.com<br />support@colasola.com</p>
+                    <p className="text-gray-600 leading-relaxed">hi@colasola.com<br /></p>
                   </div>
                 </div>
 

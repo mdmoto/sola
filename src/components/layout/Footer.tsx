@@ -17,7 +17,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
-              我们是泰国领先的光伏安装服务商，专注清迈、普吉岛、芭提雅等地，致力于为别墅家庭与精品度假村提供最省心的绿色能源解决方案。
+              我们是泰国领先的光伏集成服务商，在清迈、普吉岛、芭提雅等地设有服务网点，致力于为别墅家庭与精品商业提供最省心的绿色能源解决方案。
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-cola-blue transition-colors group">
@@ -71,23 +71,23 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-cola-blue shrink-0 mt-0.5" />
                 <span className="text-sm leading-relaxed">
                   清迈总部:<br />
-                  Nimmanhaemin Road, Chiang Mai
+                  83 2 Suriyawong 5 Rd, Tambon Hai Y, Chiang Mai
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-cola-blue shrink-0 mt-0.5" />
                 <span className="text-sm leading-relaxed">
-                  普吉分部:<br />
+                  芭提雅分部:<br />
                   Rawai, Phuket
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-cola-blue shrink-0" />
-                <span className="text-sm">+66 8 1234 5678</span>
+                <span className="text-sm">+66 6 2345 8238</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-cola-blue shrink-0" />
-                <span className="text-sm">contact@colasola.com</span>
+                <span className="text-sm">hi@colasola.com</span>
               </li>
             </ul>
           </div>

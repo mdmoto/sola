@@ -15,7 +15,7 @@ export default function About() {
           >
             <h1 className="text-4xl md:text-6xl font-bold">关于 ColaSola</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              深耕泰国北部与沿海地区，专注为家庭别墅与度假村提供高品质、最省心的本地化光伏系统。
+              我们是拥有10年经验的光伏系统专家，坚信“本地化”的价值，传承日本的工艺经验，采购中国的性价比产品，致力于为客户提供最完美的服务和最具优势的产品。
             </p>
           </motion.div>
         </div>
@@ -33,13 +33,13 @@ export default function About() {
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">我们的故事</h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                ColaSola 的诞生源于一个简单的理念：太阳能安装不应该是一次性的买卖，而是长达25年的服务承诺。
+                ColaSola 的诞生源于一个简单的理念：太阳能的使用不应该是复杂昂贵的交易，而应该像购买可乐一样轻松简单价格可接受。
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                在考察了泰国市场后，我们发现许多公司扎堆在曼谷，而当清迈、普吉或芭提雅的家庭需要安装光伏或寻求售后时，往往面临漫长的等待与高昂的跨府差旅费。
+                在深耕了泰国市场多年后，我们发现许多公司罗列太多复杂的产品参数，提出虚无的节能方案，而最后往往效果达不到他们的宣传。
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                因此，我们选择了一条不同的路：<strong className="text-cola-blue font-semibold">不做曼谷市场，全面扎根外府。</strong> 我们在清迈、清莱、普吉和芭提雅建立本地实体团队。如今，我们90%以上的业务来自于这些地区的户用别墅，赢得了超过上千个家庭的信赖。
+                因此，我们选择了一条不同的路：<strong className="text-cola-blue font-semibold">我们为结果负责。</strong> 在能源审计后，我们承诺：为客户节能达到40%以上，使投资的回报周期小于4.5年，提供10年的质保，质量问题只换不修。
               </p>
             </motion.div>
             <motion.div
@@ -74,7 +74,7 @@ export default function About() {
               <Target className="w-12 h-12 text-cola-blue mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">我们的使命</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                为泰国非都会区的家庭与度假村提供最高效、最可靠的户用光伏系统解决方案，降低用电成本，普及绿色生活。
+                为泰国的家庭提供最高效、最实在的户用光伏系统解决方案，降低用电成本，普及绿色生活。
               </p>
             </motion.div>
             <motion.div
@@ -87,7 +87,7 @@ export default function About() {
               <Leaf className="w-12 h-12 text-cola-blue mb-6" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">我们的愿景</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                成为清迈、普吉等地区最具口碑的本地化新能源管家。让清洁能源像水电一样触手可及，随叫随到。
+                成为清迈、芭提雅地区最具口碑的本地化新能源管家。让清洁能源像可乐一样触手可及，价格合理，随叫随到。
               </p>
             </motion.div>
           </div>

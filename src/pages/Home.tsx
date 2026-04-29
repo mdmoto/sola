@@ -27,7 +27,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cola-blue/10 border border-cola-blue/20 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-cola-blue animate-ping" />
               <span className="text-sm font-medium text-cola-yellow uppercase tracking-wider">
-                专注清迈、清莱、普吉岛、芭提雅
+                本地服务、日本品质、中国价格
               </span>
             </div>
 
@@ -39,7 +39,7 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
-              超过 90% 的客户是像您一样的别墅与家庭业主。我们避开曼谷的拥堵，深耕泰国北部与沿海度假区，为您提供最快响应的本地化光伏安装、PEA并网与售后服务。
+              超过 90% 的客户是像您一样的别墅与家庭业主。告别复杂的参数，我们保证最终的节能效果，为您提供最快响应的本地化光伏安装、PEA并网与售后服务。
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {[
               { label: "服务家庭与别墅", value: "1,000+", unit: "户" },
-              { label: "平均装机容量", value: "10-20", unit: "kW" },
+              { label: "平均装机容量", value: "5-10", unit: "kW" },
               { label: "度假村/精品商业", value: "50+", unit: "个" },
               { label: "本地服务网点", value: "4", unit: "城" },
             ].map((stat, idx) => (
@@ -106,7 +106,7 @@ export default function Home() {
               为您的家庭与生意 <span className="text-cola-blue">量身定制</span>
             </h3>
             <p className="text-gray-600 text-lg">
-              90% 的户用别墅经验 + 9% 的精品商业/度假村经验。我们懂您的需求，更懂如何让您的屋顶产生最大价值。
+              我们承诺：节电效果大于40%，成本回收年限小于4.5年
             </p>
           </div>
 
@@ -115,22 +115,22 @@ export default function Home() {
               {
                 icon: <HomeIcon className="w-8 h-8" />,
                 title: "户用光伏 (Residential)",
-                desc: "5kW - 30kW 别墅屋顶系统。完美匹配家庭日常与空调用电，美观且不破坏原有屋面结构。",
+                desc: "3kW - 10kW 别墅屋顶系统。完美匹配家庭日常与空调用电，美观且不破坏原有屋面结构。",
               },
               {
                 icon: <Zap className="w-8 h-8" />,
                 title: "精品商业 (Small Commercial)",
-                desc: "专为度假村、酒店、精品民宿设计的 30kW - 100kW 系统，大幅削减商业阶梯电费。",
+                desc: "专为度假村、酒店、公寓设计的 10kW - 100kW 系统，大幅削减商业阶梯电费。",
               },
               {
                 icon: <ShieldCheck className="w-8 h-8" />,
                 title: "PEA 并网代办 (Grid Connection)",
-                desc: "熟悉清迈、普吉等外府电力局（PEA）政策，全程代办并网许可，让您合法合规享受太阳能。",
+                desc: "熟悉清迈、芭提雅等外府电力局（PEA）政策，全程代办并网许可，让您合法合规享受太阳能。",
               },
               {
                 icon: <Sun className="w-8 h-8" />,
                 title: "本地运维 (Local O&M)",
-                desc: "驻扎北部与海岛的本地团队。定期的面板清洗与逆变器维护，24小时内响应本地故障。",
+                desc: "驻扎北部与沿海的本地团队。定期的面板清洗与逆变器维护，24小时内响应本地故障。",
               },
             ].map((service, idx) => (
               <motion.div
@@ -168,19 +168,19 @@ export default function Home() {
               <div className="space-y-4">
                 <h2 className="text-cola-blue font-semibold tracking-wider uppercase text-sm">Local Expertise</h2>
                 <h3 className="text-3xl md:text-5xl font-bold leading-tight">
-                  为什么在泰国北部与沿海<br />
+                  为什么在泰国<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-cola-yellow to-cola-yellow-light">选择 ColaSola？</span>
                 </h3>
               </div>
               <p className="text-gray-400 text-lg leading-relaxed">
-                不同于扎堆在曼谷及大都会区的同行，ColaSola 坚信“本地化”的价值。我们在清迈、清莱、普吉岛和芭提雅设立了实体服务团队。
+                ColaSola是拥有10年经验的光伏系统专家，坚信“本地化”的价值，传承日本的工艺经验，采购中国的性价比产品，致力于为客户提供最完美的服务和最具优势的产品。
               </p>
               <ul className="space-y-5 pt-4">
                 {[
                   "精准聚焦：90% 项目为别墅与家庭户用，懂您的屋顶",
-                  "极速响应：本地团队，免去跨府调度的漫长等待",
+                  "极速响应：本地团队，24小时不间断服务,
                   "外府并网：精通 PEA (省级电力局) 并网流程与政策",
-                  "透明报价：无隐形消费，提供 15-25 年设备质保",
+                  "透明报价：无隐形消费，提供10年超长质保，售后问题只换不修",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-4 text-gray-300">
                     <CheckCircle2 className="w-6 h-6 text-cola-blue shrink-0" />
@@ -213,7 +213,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl">
-                  <div className="text-2xl font-bold text-white mb-2">清迈/普吉首选</div>
+                  <div className="text-2xl font-bold text-white mb-2">清迈/芭提雅首选</div>
                   <p className="text-gray-300">超过一千个外府家庭通过我们实现了用电自由。</p>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function Home() {
             className="max-w-3xl mx-auto space-y-8"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-              您在普吉或清迈有别墅吗？
+              您在芭提雅或清迈有别墅吗？
             </h2>
             <p className="text-xl text-white/90">
               联系我们的本地专家，获取免费的现场勘测与专属光伏系统设计方案。

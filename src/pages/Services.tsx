@@ -12,7 +12,7 @@ export default function Services() {
       title: "现场勘测与专属设计",
       icon: <PenTool className="w-10 h-10" />,
       desc: "针对泰国别墅屋顶量身定制",
-      features: ["清迈/普吉等本地工程师免费上门", "阴影遮挡与屋顶承重分析", "系统发电量与投资回报模拟", "不破坏原有别墅外观的美学设计"],
+      features: ["清迈/芭提雅等本地工程师免费上门", "阴影遮挡与屋顶承重分析", "系统发电量与投资回报模拟", "不破坏原有别墅外观的美学设计"],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=engineer%20looking%20at%20solar%20blueprints%20in%20a%20villa%20garden%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
@@ -20,7 +20,7 @@ export default function Services() {
       title: "PEA 并网代办服务",
       icon: <Box className="w-10 h-10" />,
       desc: "熟悉泰国省级电力局规范",
-      features: ["全程代办 PEA 审批手续", "单相/三相电表升级申请", "余电上网 (Sell Back) 政策指导", "确保合法合规安全并网"],
+      features: ["全程代办 PEA 审批手续", "单相/三相电表升级申请", "银行贷款政策指导", "退税法令的申请"],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=official%20document%20stamp%20solar%20energy%20contract%2C%20professional&image_size=landscape_4_3"
     },
     {
@@ -28,7 +28,7 @@ export default function Services() {
       title: "专业施工与安装",
       icon: <Hammer className="w-10 h-10" />,
       desc: "标准化的家庭光伏交付",
-      features: ["清迈/普吉自有施工团队，无外包", "Tier 1 品牌组件与微型逆变器", "防漏水、防台风加固处理", "通常在 3-5 个工作日内完工"],
+      features: ["清迈/芭提雅自有施工团队，无外包", "Tier 1 品牌组件与微型逆变器", "防漏水、防台风加固处理", "通常在 2-5 个工作日内完工"],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=construction%20workers%20installing%20solar%20panels%20on%20villa%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
@@ -36,7 +36,7 @@ export default function Services() {
       title: "本地售后与运维",
       icon: <Wrench className="w-10 h-10" />,
       desc: "随叫随到的周边管家",
-      features: ["手机 App 实时监控发电量", "清迈/普吉本地团队快速上门", "定期面板清洗套餐服务", "长达 15-25 年的设备质保"],
+      features: ["手机 App 实时监控发电量", "清迈/芭提雅本地团队快速上门", "定期面板清洗套餐服务", "长达 10 年的设备质保"],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=smiling%20technician%20cleaning%20solar%20panel%20on%20house%20roof%2C%20high%20quality&image_size=landscape_4_3"
     }
   ];
@@ -44,7 +44,7 @@ export default function Services() {
   const faqs = [
     {
       q: "在清迈/普吉岛安装家庭光伏，大约需要多少钱？",
-      a: "通常一栋中大型别墅安装 5kW 到 10kW 的系统，费用大约在 15万 到 30万 泰铢之间（具体视屋顶结构与设备品牌而定）。我们提供免费的上门勘测与报价服务。"
+      a: "通常一栋中大型别墅安装 5kW 到 10kW 的系统，费用大约在 15万 到 15万 泰铢之间（具体视屋顶结构与设备品牌而定）。我们提供免费的上门勘测与报价服务。"
     },
     {
       q: "投资回报期 (ROI) 大概是多久？",
@@ -55,8 +55,8 @@ export default function Services() {
       a: "是的。我们专精于外府（清迈、清莱、普吉、芭提雅等）的 PEA 并网流程。从图纸审批、电表更换到最终并网，我们全程代办，无需您亲自跑腿。"
     },
     {
-      q: "为什么你们不接曼谷及大都会区的项目？",
-      a: "我们坚信本地化服务的价值。避开曼谷的拥堵，我们把资源集中在泰国北部和沿海地区，这样我们可以保证对客户的售后响应时间在 24 小时以内，提供最优质的体验。"
+      q: "你们可以协助贷款申请吗？",
+      a: "是的，我们和开泰银行展开了广泛的合作，可以协助用户申请贷款，包括0首付贷款和低息贷款，办理过程全部由我方全程服务。"
     }
   ];
 
