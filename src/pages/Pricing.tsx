@@ -127,7 +127,14 @@ export default function Pricing() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-bold text-gray-900">套餐海报</h3>
-                <span className="text-sm text-gray-500">文件名：public/pricing-poster.png</span>
+                <a
+                  href="/pricing-poster.png"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-semibold text-cola-blue hover:text-cola-blue-dark transition-colors"
+                >
+                  查看原图
+                </a>
               </div>
 
               {posterOk ? (
@@ -135,7 +142,7 @@ export default function Pricing() {
                   <img
                     src="/pricing-poster.png"
                     alt="ColaSola 户用套餐海报"
-                    className="w-full h-auto rounded-2xl"
+                    className="w-full max-h-[720px] object-contain rounded-2xl bg-gray-50"
                     onError={() => setPosterOk(false)}
                   />
                 </div>
@@ -155,4 +162,3 @@ export default function Pricing() {
     </div>
   );
 }
-
