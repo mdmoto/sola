@@ -1,8 +1,20 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Home as HomeIcon, Sun, Zap, ShieldCheck } from "lucide-react";
+import { useMemo, useState } from "react";
 
 export default function Home() {
+  const [posterOk, setPosterOk] = useState(true);
+
+  const packages = useMemo(
+    () => [
+      { kw: "3 kW", title: "小型住宅", price: "฿ 89,000", gen: "~360 kWh/月" },
+      { kw: "6 kW", title: "中型家庭", price: "฿ 139,000", gen: "~720 kWh/月" },
+      { kw: "9 kW", title: "高端别墅", price: "฿ 198,000", gen: "~1,080 kWh/月" },
+    ],
+    []
+  );
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -148,6 +160,82 @@ export default function Home() {
                 <p className="text-gray-600 leading-relaxed">{service.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-gray-50 border-y border-gray-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            <div className="space-y-8">
+              <div className="space-y-3">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">户用套餐与价格</h2>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  为了让您快速理解预算与回本周期，我们整理了最常见的 3kW / 6kW / 9kW 参考套餐。最终价格以现场勘测与书面报价为准。
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-3 gap-4">
+                {packages.map((p) => (
+                  <div key={p.kw} className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+                    <div className="text-xs font-semibold uppercase tracking-wider text-cola-blue">{p.kw}</div>
+                    <div className="text-xl font-bold text-gray-900 mt-1">{p.title}</div>
+                    <div className="text-2xl font-extrabold text-cola-blue mt-4">{p.price}</div>
+                    <div className="text-sm text-gray-500 mt-1">{p.gen}</div>
+                    <div className="mt-5 space-y-2 text-sm text-gray-600">
+                      {["包含 PEA 并网申请", "本地质保与售后"].map((h) => (
+                        <div key={h} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-cola-blue shrink-0 mt-0.5" />
+                          <span className="leading-relaxed">{h}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  to="/pricing"
+                  className="inline-flex items-center justify-center gap-2 bg-cola-blue hover:bg-cola-blue-dark text-white px-7 py-3.5 rounded-full text-base font-semibold transition-all hover:shadow-lg hover:shadow-cola-blue/20 active:scale-95"
+                >
+                  查看套餐详情
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-cola-blue px-7 py-3.5 rounded-full text-base font-semibold transition-all border border-cola-blue/25 active:scale-95"
+                >
+                  获取精确报价
+                </Link>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-gray-900">套餐海报</h3>
+                <span className="text-sm text-gray-500">public/pricing-poster.png</span>
+              </div>
+
+              {posterOk ? (
+                <div className="bg-white rounded-3xl p-4 border border-gray-100 shadow-sm">
+                  <img
+                    src="/pricing-poster.png"
+                    alt="ColaSola 户用套餐海报"
+                    className="w-full h-auto rounded-2xl"
+                    onError={() => setPosterOk(false)}
+                  />
+                </div>
+              ) : (
+                <div className="bg-white rounded-3xl p-7 border border-gray-100 text-gray-600">
+                  <div className="text-lg font-bold text-gray-900">未找到海报图片</div>
+                  <p className="mt-2 text-sm leading-relaxed">
+                    请将套餐海报保存为 <span className="font-semibold">pricing-poster.png</span> 并放到项目的{" "}
+                    <span className="font-semibold">public/</span> 目录，然后重新部署即可显示。
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>

@@ -48,6 +48,9 @@ export default function Footer() {
               <li>
                 <Link to="/projects" className="text-sm hover:text-cola-blue transition-colors">项目案例</Link>
               </li>
+              <li>
+                <Link to="/pricing" className="text-sm hover:text-cola-blue transition-colors">套餐价格</Link>
+              </li>
             </ul>
           </div>
 

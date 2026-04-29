@@ -9,6 +9,7 @@ const zh = {
       about: "关于我们",
       services: "核心服务",
       projects: "项目案例",
+      pricing: "套餐价格",
       contact: "联系我们",
       getQuote: "获取方案"
     }
@@ -23,6 +24,7 @@ const en = {
       about: "About Us",
       services: "Services",
       projects: "Projects",
+      pricing: "Pricing",
       contact: "Contact Us",
       getQuote: "Get Quote"
     }
@@ -37,6 +39,7 @@ const th = {
       about: "เกี่ยวกับเรา",
       services: "บริการ",
       projects: "ผลงาน",
+      pricing: "แพ็กเกจราคา",
       contact: "ติดต่อเรา",
       getQuote: "ขอใบเสนอราคา"
     }
@@ -51,6 +54,7 @@ const ja = {
       about: "会社概要",
       services: "サービス",
       projects: "プロジェクト",
+      pricing: "料金プラン",
       contact: "お問い合わせ",
       getQuote: "見積もり"
     }
