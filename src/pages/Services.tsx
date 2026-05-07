@@ -2,63 +2,54 @@ import { motion } from "framer-motion";
 import { PenTool, Box, Hammer, Wrench, ChevronRight, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const { t } = useTranslation();
+
+  const serviceCopy = t("services.items", { returnObjects: true }) as Array<{
+    title: string;
+    desc: string;
+    features: string[];
+  }>;
 
   const services = [
     {
       id: "engineering",
-      title: "现场勘测与专属设计",
+      title: serviceCopy[0]?.title,
       icon: <PenTool className="w-10 h-10" />,
-      desc: "针对泰国别墅屋顶量身定制",
-      features: ["清迈/芭提雅等本地工程师免费上门", "阴影遮挡与屋顶承重分析", "系统发电量与投资回报模拟", "不破坏原有别墅外观的美学设计"],
+      desc: serviceCopy[0]?.desc,
+      features: serviceCopy[0]?.features ?? [],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=engineer%20looking%20at%20solar%20blueprints%20in%20a%20villa%20garden%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: "procurement",
-      title: "PEA 并网代办服务",
+      title: serviceCopy[1]?.title,
       icon: <Box className="w-10 h-10" />,
-      desc: "熟悉泰国省级电力局规范",
-      features: ["全程代办 PEA 审批手续", "单相/三相电表升级申请", "银行贷款政策指导", "退税法令的申请"],
+      desc: serviceCopy[1]?.desc,
+      features: serviceCopy[1]?.features ?? [],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=official%20document%20stamp%20solar%20energy%20contract%2C%20professional&image_size=landscape_4_3"
     },
     {
       id: "construction",
-      title: "专业施工与安装",
+      title: serviceCopy[2]?.title,
       icon: <Hammer className="w-10 h-10" />,
-      desc: "标准化的家庭光伏交付",
-      features: ["清迈/芭提雅自有施工团队，无外包", "Tier 1 品牌组件与微型逆变器", "防漏水、防台风加固处理", "通常在 2-5 个工作日内完工"],
+      desc: serviceCopy[2]?.desc,
+      features: serviceCopy[2]?.features ?? [],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=construction%20workers%20installing%20solar%20panels%20on%20villa%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: "operations",
-      title: "本地售后与运维",
+      title: serviceCopy[3]?.title,
       icon: <Wrench className="w-10 h-10" />,
-      desc: "随叫随到的周边管家",
-      features: ["手机 App 实时监控发电量", "清迈/芭提雅本地团队快速上门", "定期面板清洗套餐服务", "长达 10 年的设备质保"],
+      desc: serviceCopy[3]?.desc,
+      features: serviceCopy[3]?.features ?? [],
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=smiling%20technician%20cleaning%20solar%20panel%20on%20house%20roof%2C%20high%20quality&image_size=landscape_4_3"
     }
   ];
 
-  const faqs = [
-    {
-      q: "在清迈/普吉岛安装家庭光伏，大约需要多少钱？",
-      a: "通常一栋中大型别墅安装 5kW 到 10kW 的系统，费用大约在 15万 到 15万 泰铢之间（具体视屋顶结构与设备品牌而定）。我们提供免费的上门勘测与报价服务。"
-    },
-    {
-      q: "投资回报期 (ROI) 大概是多久？",
-      a: "在泰国目前的电价水平下，户用光伏系统的投资回报期通常在 4 到 5 年左右。如果白天开空调的时间较长，回本速度会更快。"
-    },
-    {
-      q: "你们负责向 PEA (省级电力局) 申请并网吗？",
-      a: "是的。我们专精于外府（清迈、清莱、普吉、芭提雅等）的 PEA 并网流程。从图纸审批、电表更换到最终并网，我们全程代办，无需您亲自跑腿。"
-    },
-    {
-      q: "你们可以协助贷款申请吗？",
-      a: "是的，我们和开泰银行展开了广泛的合作，可以协助用户申请贷款，包括0首付贷款和低息贷款，办理过程全部由我方全程服务。"
-    }
-  ];
+  const faqs = t("services.faqs", { returnObjects: true }) as Array<{ q: string; a: string }>;
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -71,9 +62,9 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl space-y-6 text-center mx-auto"
           >
-            <h1 className="text-4xl md:text-6xl font-bold">核心服务</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">{t("services.headerTitle")}</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              ColaSola 专注于别墅与中小型商业光伏。从现场勘测、PEA并网代办到最终安装，为您提供省心的一站式本地化服务。
+              {t("services.headerDesc")}
             </p>
           </motion.div>
         </div>
@@ -124,8 +115,8 @@ export default function Services() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <HelpCircle className="w-12 h-12 text-cola-blue mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">常见问题解答 (FAQ)</h2>
-            <p className="text-lg text-gray-600">为您解答在泰国安装家庭光伏最关心的问题</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("services.faqTitle")}</h2>
+            <p className="text-lg text-gray-600">{t("services.faqSubtitle")}</p>
           </div>
           
           <div className="max-w-3xl mx-auto space-y-4">
@@ -156,16 +147,16 @@ export default function Services() {
       <section className="py-20 bg-gray-50 border-t border-gray-100 text-center">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            想要了解我们能为您做什么？
+            {t("services.ctaTitle")}
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            立即联系我们的本地团队，获取免费的上门勘测与定制化报价。
+            {t("services.ctaDesc")}
           </p>
           <Link
             to="/contact"
             className="inline-block bg-cola-blue hover:bg-cola-blue-dark text-white px-8 py-4 rounded-full text-lg font-bold transition-all shadow-lg shadow-cola-blue/20 active:scale-95"
           >
-            免费获取方案
+            {t("services.ctaButton")}
           </Link>
         </div>
       </section>

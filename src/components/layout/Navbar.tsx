@@ -49,6 +49,11 @@ export default function Navbar() {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    try {
+      localStorage.setItem("lng", lng);
+    } catch {
+      // ignore
+    }
     setLangMenuOpen(false);
   };
 
@@ -177,7 +182,7 @@ export default function Navbar() {
               
               {/* Language Switcher Mobile */}
               <div className="px-4 py-2 mt-2 border-t border-gray-100">
-                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Languages</p>
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">{t("common.languages")}</p>
                 <div className="grid grid-cols-2 gap-2">
                   {languages.map((lang) => (
                     <button

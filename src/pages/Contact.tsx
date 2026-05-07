@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type FormData = {
   name: string;
@@ -12,6 +13,7 @@ type FormData = {
 };
 
 export default function Contact() {
+  const { t } = useTranslation();
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -38,9 +40,9 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl space-y-6 text-center mx-auto"
           >
-            <h1 className="text-4xl md:text-6xl font-bold">联系我们</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">{t("contact.headerTitle")}</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              随时准备为您提供专业咨询与技术支持。填写表单或直接致电，我们将尽快与您取得联系。
+              {t("contact.headerDesc")}
             </p>
           </motion.div>
         </div>
@@ -57,8 +59,8 @@ export default function Contact() {
               className="lg:col-span-2 space-y-12"
             >
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold text-gray-900">本地化服务团队</h2>
-                <p className="text-gray-600 text-lg">我们的专家团队常驻清迈芭提雅，能够快速响应泰国北部及沿海度假区的光伏需求。</p>
+                <h2 className="text-3xl font-bold text-gray-900">{t("contact.infoTitle")}</h2>
+                <p className="text-gray-600 text-lg">{t("contact.infoDesc")}</p>
               </div>
 
               <div className="space-y-8">
@@ -67,7 +69,7 @@ export default function Contact() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">清迈总部 (HQ)</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.officeHq")}</h3>
                     <p className="text-gray-600 leading-relaxed">83 2 Suriyawong 5 Rd,<br />Mueang Chiang Mai 50000, Thailand</p>
                   </div>
                 </div>
@@ -77,8 +79,8 @@ export default function Contact() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">芭提雅分部</h3>
-                    <p className="text-gray-600 leading-relaxed">Rawai, Mueang Phuket District,<br />Pattaya 83130, Thailand</p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.officeBranch")}</h3>
+                    <p className="text-gray-600 leading-relaxed">Pattaya, Bang Lamung District,<br />Chon Buri 20150, Thailand</p>
                   </div>
                 </div>
 
@@ -87,8 +89,8 @@ export default function Contact() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">联系电话</h3>
-                    <p className="text-gray-600 leading-relaxed">+66 6 2345 8238<br />(支持中/英/泰三语)</p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.phoneTitle")}</h3>
+                    <p className="text-gray-600 leading-relaxed">+66 6 2345 8238<br />{t("contact.phoneNote")}</p>
                   </div>
                 </div>
 
@@ -97,7 +99,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">电子邮箱</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.emailTitle")}</h3>
                     <p className="text-gray-600 leading-relaxed">hi@colasola.com<br /></p>
                   </div>
                 </div>
@@ -107,8 +109,8 @@ export default function Contact() {
                     <Clock className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">工作时间</h3>
-                    <p className="text-gray-600 leading-relaxed">周一至周五: 9:00 AM - 6:00 PM<br />周末及节假日休息</p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.hoursTitle")}</h3>
+                    <p className="text-gray-600 leading-relaxed">{t("contact.hoursLine1")}<br />{t("contact.hoursLine2")}</p>
                   </div>
                 </div>
               </div>
@@ -130,27 +132,27 @@ export default function Contact() {
                     <div className="w-20 h-20 bg-cola-blue/10 text-cola-blue rounded-full flex items-center justify-center mb-6">
                       <CheckCircle className="w-10 h-10" />
                     </div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">提交成功！</h3>
-                    <p className="text-gray-600 text-lg">感谢您的留言。我们的项目顾问将会在 24 小时内与您联系。</p>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-4">{t("contact.successTitle")}</h3>
+                    <p className="text-gray-600 text-lg">{t("contact.successDesc")}</p>
                   </motion.div>
                 ) : null}
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-8">在线留言</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-8">{t("contact.formTitle")}</h3>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-gray-700">姓名 <span className="text-red-500">*</span></label>
+                      <label className="text-sm font-medium text-gray-700">{t("contact.fields.name")} <span className="text-red-500">*</span></label>
                       <input
-                        {...register("name", { required: "请输入您的姓名" })}
+                        {...register("name", { required: t("contact.validation.nameRequired") })}
                         className={`w-full px-5 py-4 rounded-xl bg-gray-50 border ${errors.name ? 'border-red-300 focus:ring-red-500' : 'border-transparent focus:border-cola-blue focus:ring-cola-blue'} focus:outline-none focus:ring-2 focus:ring-opacity-20 transition-all`}
                         placeholder="John Doe"
                       />
                       {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-gray-700">联系电话 <span className="text-red-500">*</span></label>
+                      <label className="text-sm font-medium text-gray-700">{t("contact.fields.phone")} <span className="text-red-500">*</span></label>
                       <input
-                        {...register("phone", { required: "请输入您的电话" })}
+                        {...register("phone", { required: t("contact.validation.phoneRequired") })}
                         className={`w-full px-5 py-4 rounded-xl bg-gray-50 border ${errors.phone ? 'border-red-300 focus:ring-red-500' : 'border-transparent focus:border-cola-blue focus:ring-cola-blue'} focus:outline-none focus:ring-2 focus:ring-opacity-20 transition-all`}
                         placeholder="+66 8 1234 5678"
                       />
@@ -160,10 +162,10 @@ export default function Contact() {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-gray-700">电子邮箱</label>
+                      <label className="text-sm font-medium text-gray-700">{t("contact.fields.email")}</label>
                       <input
                         {...register("email", { 
-                          pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "邮箱格式不正确" } 
+                          pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: t("contact.validation.emailInvalid") }
                         })}
                         className={`w-full px-5 py-4 rounded-xl bg-gray-50 border ${errors.email ? 'border-red-300 focus:ring-red-500' : 'border-transparent focus:border-cola-blue focus:ring-cola-blue'} focus:outline-none focus:ring-2 focus:ring-opacity-20 transition-all`}
                         placeholder="john@example.com"
@@ -171,7 +173,7 @@ export default function Contact() {
                       {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-gray-700">公司名称</label>
+                      <label className="text-sm font-medium text-gray-700">{t("contact.fields.company")}</label>
                       <input
                         {...register("company")}
                         className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-transparent focus:border-cola-blue focus:ring-2 focus:ring-cola-blue focus:ring-opacity-20 focus:outline-none transition-all"
@@ -181,12 +183,12 @@ export default function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-700">需求描述 <span className="text-red-500">*</span></label>
+                    <label className="text-sm font-medium text-gray-700">{t("contact.fields.message")} <span className="text-red-500">*</span></label>
                     <textarea
-                      {...register("message", { required: "请输入您的需求" })}
+                      {...register("message", { required: t("contact.validation.messageRequired") })}
                       rows={5}
                       className={`w-full px-5 py-4 rounded-xl bg-gray-50 border ${errors.message ? 'border-red-300 focus:ring-red-500' : 'border-transparent focus:border-cola-blue focus:ring-cola-blue'} focus:outline-none focus:ring-2 focus:ring-opacity-20 transition-all resize-none`}
-                      placeholder="请简要描述您的项目需求，例如：厂房屋顶面积、用电量、期望装机容量等..."
+                      placeholder={t("contact.placeholders.message")}
                     ></textarea>
                     {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
                   </div>
@@ -202,11 +204,11 @@ export default function Contact() {
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
-                        提交中...
+                        {t("contact.sending")}
                       </span>
                     ) : (
                       <>
-                        发送留言
+                        {t("contact.send")}
                         <Send className="w-5 h-5" />
                       </>
                     )}

@@ -1,58 +1,63 @@
 import { motion } from "framer-motion";
 import { MapPin, Zap, Home as HomeIcon, Building2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
+
+  const projectCopy = t("projects.items", { returnObjects: true }) as Array<{ title: string; type: "residential" | "commercial" }>;
+
   const projects = [
     {
       id: 1,
-      title: "普吉岛海景别墅光伏",
+      title: projectCopy[0]?.title,
       location: "Phuket, Thailand",
-      type: "户用屋顶",
+      type: t(`projects.types.${projectCopy[0]?.type ?? "residential"}`),
       capacity: "15 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20pool%20villa%20in%20phuket%20with%20solar%20panels%20on%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 2,
-      title: "清迈素贴山山居别墅",
+      title: projectCopy[1]?.title,
       location: "Chiang Mai, Thailand",
-      type: "户用屋顶",
+      type: t(`projects.types.${projectCopy[1]?.type ?? "residential"}`),
       capacity: "10 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20house%20in%20chiang%20mai%20mountains%20with%20solar%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 3,
-      title: "芭提雅精品度假酒店",
+      title: projectCopy[2]?.title,
       location: "Pattaya, Thailand",
-      type: "小型商业",
+      type: t(`projects.types.${projectCopy[2]?.type ?? "commercial"}`),
       capacity: "50 kW",
       icon: <Building2 className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=boutique%20resort%20in%20pattaya%20with%20solar%20panels%2C%20tropical%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 4,
-      title: "清莱有机农场民宿",
+      title: projectCopy[3]?.title,
       location: "Chiang Rai, Thailand",
-      type: "小型商业",
+      type: t(`projects.types.${projectCopy[3]?.type ?? "commercial"}`),
       capacity: "20 kW",
       icon: <Building2 className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=eco%20friendly%20homestay%20farm%20with%20solar%20panels%2C%20thailand%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 5,
-      title: "普吉拉威区现代私宅",
+      title: projectCopy[4]?.title,
       location: "Rawai, Phuket",
-      type: "户用屋顶",
+      type: t(`projects.types.${projectCopy[4]?.type ?? "residential"}`),
       capacity: "8 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20minimalist%20house%20with%20solar%20roof%2C%20sunny%20day%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 6,
-      title: "清迈杭东家庭自建房",
+      title: projectCopy[5]?.title,
       location: "Hang Dong, Chiang Mai",
-      type: "户用屋顶",
+      type: t(`projects.types.${projectCopy[5]?.type ?? "residential"}`),
       capacity: "12 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=beautiful%20suburban%20house%20with%20solar%20panels%20on%20roof%2C%20thailand%2C%20high%20quality&image_size=landscape_4_3"
@@ -70,9 +75,9 @@ export default function Projects() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl space-y-6 text-center mx-auto"
           >
-            <h1 className="text-4xl md:text-6xl font-bold">项目案例</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">{t("projects.headerTitle")}</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              从芭提雅的海景别墅，到清迈的山居小屋。我们为上千个泰国非都会区家庭与精品商业提供了可靠的绿色能源。
+              {t("projects.headerDesc")}
             </p>
           </motion.div>
         </div>

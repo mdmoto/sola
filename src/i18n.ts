@@ -1,65 +1,35 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// 中文
-const zh = {
-  translation: {
-    nav: {
-      home: "首页",
-      about: "关于我们",
-      services: "核心服务",
-      projects: "项目案例",
-      pricing: "套餐价格",
-      contact: "联系我们",
-      getQuote: "获取方案"
-    }
-  }
-};
+import zh from "./locales/zh";
+import en from "./locales/en";
+import th from "./locales/th";
+import ja from "./locales/ja";
 
-// 英文
-const en = {
-  translation: {
-    nav: {
-      home: "Home",
-      about: "About Us",
-      services: "Services",
-      projects: "Projects",
-      pricing: "Pricing",
-      contact: "Contact Us",
-      getQuote: "Get Quote"
-    }
-  }
-};
+const SUPPORTED_LANGS = ["th", "en", "zh", "ja"] as const;
+type SupportedLang = (typeof SUPPORTED_LANGS)[number];
 
-// 泰文 (默认)
-const th = {
-  translation: {
-    nav: {
-      home: "หน้าแรก",
-      about: "เกี่ยวกับเรา",
-      services: "บริการ",
-      projects: "ผลงาน",
-      pricing: "แพ็กเกจราคา",
-      contact: "ติดต่อเรา",
-      getQuote: "ขอใบเสนอราคา"
-    }
-  }
-};
+function normalizeLang(raw: string | null | undefined): SupportedLang | null {
+  if (!raw) return null;
+  const lower = raw.toLowerCase();
+  const base = lower.split("-")[0] ?? lower;
+  return (SUPPORTED_LANGS as readonly string[]).includes(base) ? (base as SupportedLang) : null;
+}
 
-// 日文
-const ja = {
-  translation: {
-    nav: {
-      home: "ホーム",
-      about: "会社概要",
-      services: "サービス",
-      projects: "プロジェクト",
-      pricing: "料金プラン",
-      contact: "お問い合わせ",
-      getQuote: "見積もり"
-    }
+function getInitialLanguage(): SupportedLang {
+  try {
+    const saved = normalizeLang(localStorage.getItem("lng"));
+    if (saved) return saved;
+  } catch {
+    // ignore
   }
-};
+
+  const browserLang =
+    typeof navigator !== "undefined"
+      ? normalizeLang(navigator.language) ?? normalizeLang(navigator.languages?.[0])
+      : null;
+  return browserLang ?? "th";
+}
 
 i18n
   .use(initReactI18next)
@@ -70,7 +40,7 @@ i18n
       zh,
       ja
     },
-    lng: 'th',
+    lng: getInitialLanguage(),
     fallbackLng: 'th',
     interpolation: {
       escapeValue: false, // react already safes from xss

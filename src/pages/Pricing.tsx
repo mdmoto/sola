@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Download } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type PackageItem = {
   title: string;
@@ -13,33 +14,14 @@ type PackageItem = {
 
 export default function Pricing() {
   const [posterOk, setPosterOk] = useState(true);
+  const { t } = useTranslation();
 
   const packages = useMemo<PackageItem[]>(
-    () => [
-      {
-        title: "小型住宅",
-        kw: "3 kW",
-        price: "฿ 89,000",
-        generation: "~360 kWh/月",
-        highlights: ["0% 首付（以最终方案为准）", "并网型（Grid-tied）", "包含 PEA 并网申请", "本地质保与售后"],
-      },
-      {
-        title: "中型家庭",
-        kw: "6 kW",
-        price: "฿ 139,000",
-        generation: "~720 kWh/月",
-        highlights: ["0% 首付（以最终方案为准）", "并网型（Grid-tied）", "包含 PEA 并网申请", "本地质保与售后"],
-      },
-      {
-        title: "高端别墅",
-        kw: "9 kW",
-        price: "฿ 198,000",
-        generation: "~1,080 kWh/月",
-        highlights: ["0% 首付（以最终方案为准）", "并网型（Grid-tied）", "包含 PEA 并网申请", "本地质保与售后"],
-      },
-    ],
-    []
+    () => t("pricing.packages", { returnObjects: true }) as PackageItem[],
+    [t]
   );
+
+  const notes = useMemo(() => t("pricing.notes", { returnObjects: true }) as string[], [t]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -51,23 +33,23 @@ export default function Pricing() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl space-y-5"
           >
-            <h1 className="text-4xl md:text-6xl font-bold">户用套餐与价格</h1>
+            <h1 className="text-4xl md:text-6xl font-bold">{t("pricing.headerTitle")}</h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              下面是 ColaSola 常见的 3kW / 6kW / 9kW 户用光伏套餐参考。最终报价会根据屋顶结构、用电习惯、线缆走线距离与并网条件进行确认。
+              {t("pricing.headerDesc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-cola-blue hover:bg-cola-blue-dark text-white px-7 py-3.5 rounded-full text-base font-semibold transition-all hover:shadow-lg hover:shadow-cola-blue/20 active:scale-95"
               >
-                获取精确报价
+                {t("pricing.getAccurateQuote")}
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
                 href="/pricing-poster.png"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/15 text-white px-7 py-3.5 rounded-full text-base font-semibold transition-all active:scale-95"
               >
-                下载海报
+                {t("pricing.downloadPoster")}
                 <Download className="w-5 h-5" />
               </a>
             </div>
@@ -115,25 +97,25 @@ export default function Pricing() {
               </div>
 
               <div className="bg-white rounded-3xl p-7 border border-gray-100">
-                <h3 className="text-lg font-bold text-gray-900">重要说明</h3>
+                <h3 className="text-lg font-bold text-gray-900">{t("common.importantNotes")}</h3>
                 <ul className="mt-4 space-y-3 text-gray-600 text-sm leading-relaxed">
-                  <li>价格为参考区间，最终以现场勘测与书面报价为准。</li>
-                  <li>月发电量为估算值，受屋顶朝向、遮挡与当地日照影响。</li>
-                  <li>如果您在清迈/清莱/普吉/芭提雅，我们可安排本地团队上门评估。</li>
+                  {notes.map((note) => (
+                    <li key={note}>{note}</li>
+                  ))}
                 </ul>
               </div>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <h3 className="text-xl font-bold text-gray-900">套餐海报</h3>
+                <h3 className="text-xl font-bold text-gray-900">{t("common.poster")}</h3>
                 <a
                   href="/pricing-poster.png"
                   target="_blank"
                   rel="noreferrer"
                   className="text-sm font-semibold text-cola-blue hover:text-cola-blue-dark transition-colors"
                 >
-                  查看原图
+                  {t("common.viewOriginal")}
                 </a>
               </div>
 
@@ -141,17 +123,19 @@ export default function Pricing() {
                 <div className="bg-white rounded-3xl p-4 border border-gray-100 shadow-sm">
                   <img
                     src="/pricing-poster.png"
-                    alt="ColaSola 户用套餐海报"
+                    alt={t("common.poster")}
                     className="w-full max-h-[720px] object-contain rounded-2xl bg-gray-50"
                     onError={() => setPosterOk(false)}
                   />
                 </div>
               ) : (
                 <div className="bg-white rounded-3xl p-7 border border-gray-100 text-gray-600">
-                  <div className="text-lg font-bold text-gray-900">未找到海报图片</div>
+                  <div className="text-lg font-bold text-gray-900">{t("common.notFoundPosterTitle")}</div>
                   <p className="mt-2 text-sm leading-relaxed">
-                    请将你那张套餐海报保存为 <span className="font-semibold">pricing-poster.png</span> 并放到项目的{" "}
-                    <span className="font-semibold">public/</span> 目录，然后重新部署即可显示。
+                    {t("common.notFoundPosterBody", {
+                      file: "pricing-poster.png",
+                      dir: "public/",
+                    })}
                   </p>
                 </div>
               )}
