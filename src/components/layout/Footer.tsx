@@ -1,6 +1,24 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 import { useTranslation } from "react-i18next";
+
+/* LINE icon – official logo simplified to a single SVG path */
+function LineIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.48 2 2 5.83 2 10.5c0 4.07 3.53 7.48 8.3 8.33.32.07.76.22.87.5.1.25.07.65.03.91l-.14.85c-.04.25-.2.97.85.53s5.65-3.33 7.71-5.7C21.53 13.78 22 12.2 22 10.5 22 5.83 17.52 2 12 2zm-3.38 11.03H6.58a.6.6 0 01-.6-.6V8.6a.6.6 0 011.2 0v3.23h1.44a.6.6 0 010 1.2zm1.86-.6a.6.6 0 01-1.2 0V8.6a.6.6 0 011.2 0v3.83zm4.24 0a.6.6 0 01-.48.59.6.6 0 01-.65-.28l-2.04-2.78v2.47a.6.6 0 01-1.2 0V8.6a.6.6 0 01.48-.59.6.6 0 01.65.28l2.04 2.78V8.6a.6.6 0 011.2 0v3.83zm3.28-2.63a.6.6 0 010 1.2H16.56v1.03H18a.6.6 0 010 1.2h-2.04a.6.6 0 01-.6-.6V8.6a.6.6 0 01.6-.6H18a.6.6 0 010 1.2h-1.44v1.0H18a.6.6 0 010 1.2z" />
+    </svg>
+  );
+}
+
+/* TikTok icon */
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.41a8.16 8.16 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.84z" />
+    </svg>
+  );
+}
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -25,14 +43,14 @@ export default function Footer() {
               {t("footer.brandDesc")}
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-cola-blue transition-colors group">
+              <a href="https://www.facebook.com/share/1CXofwPmAn/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-[#1877F2] transition-colors group" aria-label="Facebook">
                 <Facebook className="w-5 h-5 text-gray-400 group-hover:text-white" />
               </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-cola-blue transition-colors group">
-                <Twitter className="w-5 h-5 text-gray-400 group-hover:text-white" />
+              <a href="https://line.me/ti/p/~cola-sola" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-[#06C755] transition-colors group" aria-label="LINE">
+                <LineIcon className="w-5 h-5 text-gray-400 group-hover:text-white" />
               </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-cola-blue transition-colors group">
-                <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
+              <a href="https://www.tiktok.com/@colasola6" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-[#ff0050] transition-colors group" aria-label="TikTok">
+                <TikTokIcon className="w-5 h-5 text-gray-400 group-hover:text-white" />
               </a>
             </div>
           </div>

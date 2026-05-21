@@ -259,6 +259,7 @@ const en = {
       },
       sending: "Submitting...",
       send: "Send message",
+      socialTitle: "Follow us",
     },
     footer: {
       brandDesc:

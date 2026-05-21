@@ -259,6 +259,7 @@ const th = {
       },
       sending: "กำลังส่ง...",
       send: "ส่งข้อความ",
+      socialTitle: "ติดตามเรา",
     },
     footer: {
       brandDesc:

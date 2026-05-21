@@ -255,6 +255,7 @@ const zh = {
       },
       sending: "提交中...",
       send: "发送留言",
+      socialTitle: "关注我们",
     },
     footer: {
       brandDesc:

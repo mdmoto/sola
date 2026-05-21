@@ -114,6 +114,60 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
+              {/* Social Media */}
+              <div className="space-y-4">
+                <h2 className="text-xl font-bold text-gray-900">{t("contact.socialTitle")}</h2>
+                <div className="space-y-3">
+                  <a
+                    href="https://www.facebook.com/share/1CXofwPmAn/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-gray-100 bg-white hover:border-[#1877F2]/30 hover:bg-[#1877F2]/5 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-[#1877F2]/10 text-[#1877F2] rounded-xl flex items-center justify-center shrink-0 group-hover:bg-[#1877F2] group-hover:text-white transition-all duration-300">
+                      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-semibold text-gray-900 group-hover:text-[#1877F2] transition-colors">Facebook</p>
+                      <p className="text-sm text-gray-500 truncate">ColaSola</p>
+                    </div>
+                    <svg className="w-5 h-5 text-gray-300 group-hover:text-[#1877F2] ml-auto shrink-0 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                  </a>
+
+                  <a
+                    href="https://line.me/ti/p/~cola-sola"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-gray-100 bg-white hover:border-[#06C755]/30 hover:bg-[#06C755]/5 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-[#06C755]/10 text-[#06C755] rounded-xl flex items-center justify-center shrink-0 group-hover:bg-[#06C755] group-hover:text-white transition-all duration-300">
+                      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.83 2 10.5c0 4.07 3.53 7.48 8.3 8.33.32.07.76.22.87.5.1.25.07.65.03.91l-.14.85c-.04.25-.2.97.85.53s5.65-3.33 7.71-5.7C21.53 13.78 22 12.2 22 10.5 22 5.83 17.52 2 12 2z"/></svg>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-semibold text-gray-900 group-hover:text-[#06C755] transition-colors">LINE</p>
+                      <p className="text-sm text-gray-500 truncate">cola-sola</p>
+                    </div>
+                    <svg className="w-5 h-5 text-gray-300 group-hover:text-[#06C755] ml-auto shrink-0 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                  </a>
+
+                  <a
+                    href="https://www.tiktok.com/@colasola6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 rounded-2xl border border-gray-100 bg-white hover:border-gray-900/20 hover:bg-gray-50 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-gray-900/10 text-gray-900 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.41a8.16 8.16 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.84z"/></svg>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-semibold text-gray-900 transition-colors">TikTok</p>
+                      <p className="text-sm text-gray-500 truncate">@colasola6</p>
+                    </div>
+                    <svg className="w-5 h-5 text-gray-300 group-hover:text-gray-900 ml-auto shrink-0 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                  </a>
+                </div>
+              </div>
             </motion.div>
 
             {/* Contact Form */}

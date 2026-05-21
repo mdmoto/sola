@@ -259,6 +259,7 @@ const ja = {
       },
       sending: "送信中...",
       send: "送信する",
+      socialTitle: "フォローする",
     },
     footer: {
       brandDesc:
