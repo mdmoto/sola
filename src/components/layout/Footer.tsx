@@ -74,6 +74,9 @@ export default function Footer() {
               <li>
                 <Link to="/pricing" className="text-sm hover:text-cola-blue transition-colors">{t("nav.pricing")}</Link>
               </li>
+              <li>
+                <Link to="/careers" className="text-sm hover:text-cola-blue transition-colors">{t("nav.careers")}</Link>
+              </li>
             </ul>
           </div>
 
@@ -95,7 +98,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-cola-blue shrink-0 mt-0.5" />
                 <span className="text-sm leading-relaxed">
                   {t("footer.chiangMaiHq")}<br />
-                  83 2 Suriyawong 5 Rd, Tambon Hai Y, Chiang Mai
+                  169 Moo 5, Nong Hoi, Mueang Chiang Mai
                 </span>
               </li>
               <li className="flex items-start gap-3">

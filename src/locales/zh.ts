@@ -8,6 +8,7 @@ const zh = {
       pricing: "套餐价格",
       contact: "联系我们",
       getQuote: "获取方案",
+      careers: "招聘",
     },
     common: {
       languages: "语言",
@@ -268,6 +269,50 @@ const zh = {
       pattayaBranch: "芭提雅分部:",
       privacy: "隐私政策",
       terms: "服务条款",
+    },
+    careers: {
+      headerTitle: "加入我们",
+      headerDesc: "加入泰国清洁能源革命，我们正在寻找优秀人才，将太阳能带入千家万户。",
+      positionTitle: "商务拓展与协调专员",
+      location: "泰国清迈",
+      langReq: "需精通中文和泰语",
+      sectionResponsibilities: "岗位职责",
+      responsibilities: [
+        "商务谈判与签约：负责与清迈当地屋顶业主进行商务谈判，讲解光伏方案，签署标准分包合同。",
+        "三方协调：作为客户、公司、泰国银行及政府机构（PEA/ERC）之间的沟通桥梁，确保信息准确传达。",
+        "贷款与退税协助：协助业主准备 KBank 或 SCB 贷款申请材料，指导办理每年 20 万泰铢个税抵扣。",
+        "并网跟进：协调本地工程师提交并网申请材料，跟踪 PEA 审批进度，解决并网过程中的合规问题。",
+        "文档管理：负责商务合同、技术图纸及政府文件的中泰翻译与归档。"
+      ],
+      sectionRequirements: "任职要求",
+      reqLangTitle: "语言能力",
+      reqLangs: [
+        "泰语（必须）：母语或流利水平",
+        "中文：HSK 6 或同等水平",
+        "英语：熟练阅读"
+      ],
+      reqBgTitle: "专业背景",
+      reqBg: "大专及以上学历；有光伏、房地产、保险或银行信贷经验者优先。",
+      reqCoreTitle: "核心素质",
+      reqCores: [
+        "出色的沟通协调能力",
+        "基本金融知识（ROI、贷款利率）",
+        "持有清迈驾照并自备车辆"
+      ],
+      reqStressTitle: "抗压能力",
+      reqStress: "能够处理碎片化任务，执行力强。",
+      reqNote: "备注：满足条件越多，薪资越高。最低要求：泰语 + 任一其他条件。",
+      sectionCompensation: "薪酬待遇",
+      salaryLabel: "底薪",
+      salary: "15,000 – 55,000 泰铢/月",
+      commissionLabel: "提成",
+      commission: "根据签约屋顶合同数量计提。",
+      benefitsLabel: "福利",
+      benefits: "交通补贴、通讯补贴、社会保险、年终奖。",
+      ctaTitle: "准备好加入 ColaSola 了吗？",
+      ctaDesc: "发送您的简历，让我们一起构建绿色未来。",
+      ctaEmail: "hi@colasola.com",
+      ctaPhone: "+66 6 2345 8238",
     },
   },
 } as const;

@@ -70,7 +70,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.officeHq")}</h3>
-                    <p className="text-gray-600 leading-relaxed">83 2 Suriyawong 5 Rd,<br />Mueang Chiang Mai 50000, Thailand</p>
+                    <p className="text-gray-600 leading-relaxed">169 Moo 5, Nong Hoi Sub-district,<br />Mueang Chiang Mai District, Chiang Mai</p>
                   </div>
                 </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.officeBranch")}</h3>
-                    <p className="text-gray-600 leading-relaxed">Pattaya, Bang Lamung District,<br />Chon Buri 20150, Thailand</p>
+                    <p className="text-gray-600 leading-relaxed">Pattaya, Bang Lamung District,<br />Chon Buri, Thailand</p>
                   </div>
                 </div>
 

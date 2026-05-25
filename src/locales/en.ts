@@ -8,6 +8,7 @@ const en = {
       pricing: "Pricing",
       contact: "Contact",
       getQuote: "Get Quote",
+      careers: "Careers",
     },
     common: {
       languages: "Languages",
@@ -272,6 +273,50 @@ const en = {
       pattayaBranch: "Pattaya branch:",
       privacy: "Privacy policy",
       terms: "Terms of service",
+    },
+    careers: {
+      headerTitle: "Join Our Team",
+      headerDesc: "Be part of the clean energy revolution in Thailand. We're looking for talented individuals to help us bring solar power to every home.",
+      positionTitle: "Business Development & Coordinator",
+      location: "Chiang Mai, Thailand",
+      langReq: "Chinese & Thai Required",
+      sectionResponsibilities: "Job Responsibilities",
+      responsibilities: [
+        "Business Negotiation & Contract Signing: Handle business negotiations with local Chiang Mai rooftop owners, explain solar solutions, and sign standard sub-contracts.",
+        "Tri-party Coordination: Serve as a communication bridge between the client, our company, Thai banks, and government agencies (PEA/ERC) to ensure accurate information delivery.",
+        "Loan & Tax Refund Assistance: Help homeowners prepare loan application documents for KBank or SCB, and guide them through the annual 200,000 THB personal income tax deduction claim.",
+        "Grid Connection Follow-up: Coordinate with local engineers to submit grid connection application documents, track PEA approval progress, and resolve business compliance issues during the grid connection process.",
+        "Document Management: Handle Chinese-Thai translation and archiving of business contracts, technical drawings, and government documents."
+      ],
+      sectionRequirements: "Requirements",
+      reqLangTitle: "Language Skills",
+      reqLangs: [
+        "Thai (mandatory): Native level or fluent",
+        "Chinese: HSK 6 or equivalent",
+        "English: Proficient reading"
+      ],
+      reqBgTitle: "Professional Background",
+      reqBg: "College degree or above; solar, real estate, insurance, or bank loans experience preferred.",
+      reqCoreTitle: "Core Qualities",
+      reqCores: [
+        "Exceptional communication skills",
+        "Basic financial knowledge (ROI, loan interest)",
+        "Chiang Mai driver's license and vehicle"
+      ],
+      reqStressTitle: "Stress Resilience",
+      reqStress: "Handle fragmented tasks with strong execution ability.",
+      reqNote: "Note: The more conditions met, the higher the salary. Minimum: Thai + any one condition.",
+      sectionCompensation: "Compensation",
+      salaryLabel: "Base Salary",
+      salary: "15,000 – 55,000 THB/month",
+      commissionLabel: "Commission",
+      commission: "Based on rooftop contracts signed.",
+      benefitsLabel: "Benefits",
+      benefits: "Transportation, phone, social insurance, year-end bonus.",
+      ctaTitle: "Ready to Join ColaSola?",
+      ctaDesc: "Send us your resume and let's build a greener future together.",
+      ctaEmail: "hi@colasola.com",
+      ctaPhone: "+66 6 2345 8238",
     },
   },
 } as const;

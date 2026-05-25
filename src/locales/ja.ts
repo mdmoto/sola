@@ -8,6 +8,7 @@ const ja = {
       pricing: "料金プラン",
       contact: "お問い合わせ",
       getQuote: "見積もり",
+      careers: "採用情報",
     },
     common: {
       languages: "言語",
@@ -272,6 +273,50 @@ const ja = {
       pattayaBranch: "パタヤ支社:",
       privacy: "プライバシーポリシー",
       terms: "利用規約",
+    },
+    careers: {
+      headerTitle: "仲間を募集しています",
+      headerDesc: "タイのクリーンエネルギー革命に参加しませんか。すべての家庭にソーラーパワーを届けるため、優秀な人材を求めています。",
+      positionTitle: "事業開発・コーディネーター",
+      location: "タイ・チェンマイ",
+      langReq: "中国語・タイ語必須",
+      sectionResponsibilities: "業務内容",
+      responsibilities: [
+        "商談・契約締結：チェンマイの屋根オーナーとの商談、ソーラーソリューションの説明、標準サブ契約の締結。",
+        "三者間調整：顧客・自社・タイ銀行・政府機関（PEA/ERC）の間のコミュニケーションブリッジとして、正確な情報伝達を確保。",
+        "ローン・税還付サポート：KBankまたはSCBの融資申請書類の準備を支援し、年間20万バーツの所得税控除手続きをガイド。",
+        "系統連系フォローアップ：現地エンジニアと連携し、連系申請書類の提出、PEA承認の進捗追跡、コンプライアンス問題の解決。",
+        "ドキュメント管理：ビジネス契約、技術図面、政府書類の中国語・タイ語翻訳およびアーカイブ管理。"
+      ],
+      sectionRequirements: "応募要件",
+      reqLangTitle: "語学力",
+      reqLangs: [
+        "タイ語（必須）：ネイティブレベルまたは流暢",
+        "中国語：HSK 6 またはそれに相当するレベル",
+        "英語：読解力あり"
+      ],
+      reqBgTitle: "経歴",
+      reqBg: "大学卒以上。ソーラー、不動産、保険、銀行融資の経験者優遇。",
+      reqCoreTitle: "求める人物像",
+      reqCores: [
+        "優れたコミュニケーション能力",
+        "基本的な金融知識（ROI、ローン金利）",
+        "チェンマイの運転免許証と自家用車"
+      ],
+      reqStressTitle: "ストレス耐性",
+      reqStress: "細分化されたタスクにも対応でき、高い実行力を持つ方。",
+      reqNote: "備考：条件を多く満たすほど給与が高くなります。最低条件：タイ語＋他の条件1つ。",
+      sectionCompensation: "報酬",
+      salaryLabel: "基本給",
+      salary: "15,000 – 55,000 バーツ/月",
+      commissionLabel: "歩合",
+      commission: "屋根契約の締結数に応じて支給。",
+      benefitsLabel: "福利厚生",
+      benefits: "交通費、通信費、社会保険、年末賞与。",
+      ctaTitle: "ColaSolaで一緒に働きませんか？",
+      ctaDesc: "履歴書をお送りください。一緒にグリーンな未来を築きましょう。",
+      ctaEmail: "hi@colasola.com",
+      ctaPhone: "+66 6 2345 8238",
     },
   },
 } as const;

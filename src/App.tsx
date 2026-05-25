@@ -6,6 +6,7 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Projects from "@/pages/Projects";
 import Pricing from "@/pages/Pricing";
+import Careers from "@/pages/Careers";
 import Contact from "@/pages/Contact";
 
 // ScrollToTop component to scroll to top on route change
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="careers" element={<Careers />} />
         </Route>
       </Routes>
     </Router>
