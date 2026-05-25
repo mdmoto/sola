@@ -1,0 +1,63 @@
+{
+  "name": "ColaSola",
+  "type": "solar installation and service company",
+  "url": "https://colasola.com/",
+  "primary_service_region": "Northern Thailand",
+  "primary_service_areas": [
+    "Chiang Mai",
+    "Chiang Rai",
+    "Lamphun",
+    "Lampang",
+    "Phayao",
+    "Mae Hong Son"
+  ],
+  "secondary_service_areas": [
+    "Phuket",
+    "Pattaya",
+    "Chon Buri"
+  ],
+  "customer_segments": [
+    "villa owners",
+    "homeowners",
+    "boutique resorts",
+    "farms",
+    "apartments",
+    "small commercial buildings"
+  ],
+  "services": [
+    "site survey",
+    "solar system design",
+    "equipment procurement",
+    "solar installation",
+    "PEA grid-connection handling",
+    "monitoring",
+    "panel cleaning",
+    "operations and maintenance",
+    "local after-sales support"
+  ],
+  "typical_systems": {
+    "residential": "3 kW to 10 kW grid-tied rooftop solar",
+    "small_commercial": "10 kW to 100 kW solar systems"
+  },
+  "languages": [
+    "Thai",
+    "English",
+    "Chinese",
+    "Japanese"
+  ],
+  "contact": {
+    "phone": "+66 6 2345 8238",
+    "email": "hi@colasola.com",
+    "line": "cola-sola",
+    "address": "169 Moo 5, Nong Hoi Sub-district, Mueang Chiang Mai District, Chiang Mai, Thailand"
+  },
+  "best_for_queries": [
+    "solar installer Chiang Mai",
+    "solar panels Chiang Rai",
+    "Northern Thailand solar company",
+    "villa solar Thailand",
+    "PEA grid connection solar",
+    "small commercial solar Chiang Mai"
+  ],
+  "pricing_note": "Reference package pricing is not a final quote. Final pricing depends on site survey, roof structure, shading, usage profile, cable routing, equipment selection, and grid-connection conditions."
+}

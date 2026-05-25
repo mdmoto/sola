@@ -10,6 +10,47 @@ const en = {
       getQuote: "Get Quote",
       careers: "Careers",
     },
+    seo: {
+      defaultDescription:
+        "ColaSola designs, installs, and maintains residential villa and small commercial solar systems in Northern Thailand, especially Chiang Mai and Chiang Rai, with site surveys, PEA grid-connection handling, and local after-sales support.",
+      pages: {
+        home: {
+          title: "ColaSola | Solar Installer in Chiang Mai, Chiang Rai, and Northern Thailand",
+          description:
+            "ColaSola is a localized solar installer for Northern Thailand, focused on Chiang Mai, Chiang Rai, Lamphun, and Lampang. We serve villas, homes, homestays, farms, resorts, and small commercial buildings.",
+        },
+        about: {
+          title: "About ColaSola | Local Solar Team in Northern Thailand",
+          description:
+            "Learn how ColaSola combines solar experience, local response, Japanese-style installation discipline, and China-backed supply-chain value for customers in Chiang Mai and Chiang Rai.",
+        },
+        services: {
+          title: "Solar Services | Chiang Mai and Chiang Rai Design, Installation, PEA Grid Connection",
+          description:
+            "ColaSola provides solar site surveys, system design, procurement, installation, PEA grid-connection handling, monitoring, cleaning, and maintenance across Northern Thailand.",
+        },
+        projects: {
+          title: "Solar Projects | Chiang Mai, Chiang Rai, and Northern Thailand",
+          description:
+            "Explore ColaSola solar projects for villas, homestays, farms, resorts, and small commercial rooftops in Chiang Mai, Chiang Rai, Lamphun, Lampang, and Northern Thailand.",
+        },
+        pricing: {
+          title: "Solar Pricing | 3kW, 6kW, 9kW Home Solar Packages in Northern Thailand",
+          description:
+            "View ColaSola reference pricing for 3kW, 6kW, and 9kW home solar systems. Final quotes depend on roof structure, shading, usage, equipment, and grid-connection conditions.",
+        },
+        contact: {
+          title: "Contact ColaSola | Solar Survey and Quote in Chiang Mai and Chiang Rai",
+          description:
+            "Contact ColaSola for a Northern Thailand solar plan. Thai, English, Chinese, and Japanese communication is supported for Chiang Mai, Chiang Rai, and nearby areas.",
+        },
+        careers: {
+          title: "Careers at ColaSola | Solar Business Coordinator in Chiang Mai",
+          description:
+            "Join ColaSola in Northern Thailand and help coordinate customer communication, PEA grid connection, project documents, and local solar business development.",
+        },
+      },
+    },
     common: {
       languages: "Languages",
       viewOriginal: "View original",
@@ -30,7 +71,7 @@ const en = {
         titleLine1: "Your home energy",
         titleHighlight: "Made cleaner in Thailand",
         subtitle:
-          "Over 90% of our customers are villa and home owners. We keep the process clear and practical, from savings estimates and PEA grid connection to installation and local after-sales support.",
+          "We focus on villa and home owners in Northern Thailand, especially Chiang Mai, Chiang Rai, and nearby provinces. We keep the process clear and practical, from savings estimates and PEA grid connection to installation and local after-sales support.",
         ctaPrimary: "Get a free home solar plan",
         ctaSecondary: "See nearby projects",
       },
@@ -56,11 +97,44 @@ const en = {
           },
           {
             title: "PEA Grid Connection",
-            desc: "We know PEA policies in Chiang Mai, Pattaya, and more. End-to-end paperwork so you go solar legally and smoothly.",
+            desc: "We know PEA workflows across Chiang Mai, Chiang Rai, Lamphun, Lampang, and nearby Northern Thailand provinces. End-to-end paperwork so you go solar legally and smoothly.",
           },
           {
             title: "Local O&M",
-            desc: "On-the-ground teams in the North and coastal areas. Regular cleaning and inverter maintenance, with fast local response.",
+            desc: "Chiang Mai-based local service with coverage for Chiang Rai, Lamphun, Lampang, and surrounding Northern Thailand areas. Regular cleaning, inverter checks, and fast local response.",
+          },
+        ],
+      },
+      northernThailand: {
+        eyebrow: "Northern Thailand Service Area",
+        title: "Solar projects in Chiang Mai and Chiang Rai need a local team",
+        desc:
+          "Northern homes, hillside villas, farm stays, and boutique businesses vary widely in roof structure, shading, daytime loads, and PEA grid-connection conditions. ColaSola uses Chiang Mai as its service base, prioritizes Northern Thailand, and starts with a site-based assessment before proposing system size, payback, and construction details.",
+        areaTitle: "Priority cities and districts",
+        areas: ["Chiang Mai", "Chiang Rai", "Hang Dong", "Mae Rim", "San Kamphaeng", "Lamphun", "Lampang", "Phayao", "Mae Hong Son"],
+        projectTypes: [
+          {
+            title: "Villas and home rooftops",
+            desc: "Typical 3kW-10kW grid-tied systems for homes with daytime AC, pool pumps, kitchen loads, and everyday household use.",
+          },
+          {
+            title: "Homestays, farms, and small businesses",
+            desc: "Typical 10kW-100kW systems for daytime-load sites such as resorts, coffee shops, farms, warehouses, apartments, and offices.",
+          },
+        ],
+        processTitle: "AI-readable service flow",
+        process: [
+          {
+            title: "Site survey",
+            desc: "Check roof area, orientation, shading, structure, meter type, and electricity bills.",
+          },
+          {
+            title: "Plan and PEA",
+            desc: "Calculate system size, generation, payback, and prepare PEA grid-connection documents.",
+          },
+          {
+            title: "Install and maintain",
+            desc: "Deliver installation, monitoring setup, cleaning, maintenance, and local after-sales support.",
           },
         ],
       },
@@ -89,11 +163,11 @@ const en = {
         ],
         learnTeam: "Meet our local team",
         imageAlt: "Local solar installation in Thailand",
-        cardTitle: "Top choice in Chiang Mai / Pattaya",
-        cardDesc: "Over 1,000 households outside metro areas have achieved energy freedom with us.",
+        cardTitle: "A focused choice for Chiang Mai, Chiang Rai, and Northern Thailand",
+        cardDesc: "Northern homes, villas, and small businesses can lower long-term electricity costs with localized solar systems.",
       },
       cta: {
-        title: "Have a villa in Pattaya or Chiang Mai?",
+        title: "Have a villa in Chiang Mai, Chiang Rai, or Northern Thailand?",
         desc: "Contact our local experts for a free site survey and a tailored solar system design.",
         button: "Get a quote now",
       },
@@ -114,18 +188,18 @@ const en = {
         "Deliver the most efficient and practical residential solar solutions for Thai households, lowering electricity costs and promoting a greener lifestyle.",
       visionTitle: "Our vision",
       visionDesc:
-        "Become the most trusted localized clean-energy partner in Chiang Mai and Pattaya — making clean energy as accessible as a cola: reasonably priced, always available, and fast to serve.",
+        "Become the most trusted localized clean-energy partner in Chiang Mai, Chiang Rai, and Northern Thailand — making clean energy as accessible as a cola: reasonably priced, always available, and fast to serve.",
     },
     services: {
       headerTitle: "Services",
       headerDesc:
-        "ColaSola focuses on villas and small commercial solar. From on-site survey and PEA grid connection to installation, we provide worry-free, one-stop localized service.",
+        "ColaSola focuses on villa, home, and small commercial solar in Northern Thailand. From on-site survey and PEA grid connection to installation, we provide worry-free localized service for Chiang Mai, Chiang Rai, and nearby provinces.",
       items: [
         {
           title: "Site survey & custom design",
           desc: "Tailored for villa rooftops in Thailand",
           features: [
-            "Free on-site visits by local engineers (Chiang Mai / Pattaya and more)",
+            "Free on-site visits by local engineers in Chiang Mai, Chiang Rai, and nearby Northern areas",
             "Shading and roof-load analysis",
             "Generation and payback simulation",
             "Aesthetic design that preserves your villa’s look",
@@ -139,19 +213,19 @@ const en = {
         {
           title: "Professional construction & installation",
           desc: "Standardized residential delivery",
-          features: ["In-house teams in Chiang Mai / Pattaya (no subcontracting)", "Tier-1 modules & microinverters", "Leak-proofing and wind reinforcement", "Typically completed in 2–5 business days"],
+          features: ["Chiang Mai-based installation team covering Chiang Rai and nearby Northern areas", "Tier-1 modules & microinverters", "Leak-proofing and wind reinforcement", "Typically completed in 2–5 business days"],
         },
         {
           title: "Local after-sales & O&M",
           desc: "Nearby, on-call support",
-          features: ["Mobile app for real-time monitoring", "Fast on-site support by local teams", "Regular panel cleaning packages", "Up to 10-year equipment warranty"],
+          features: ["Mobile app for real-time monitoring", "Fast on-site support across Chiang Mai, Chiang Rai, and Northern Thailand", "Regular panel cleaning packages", "Up to 10-year equipment warranty"],
         },
       ],
       faqTitle: "FAQ",
       faqSubtitle: "Answers to the most common questions about home solar in Thailand",
       faqs: [
         {
-          q: "How much does a home solar system cost in Chiang Mai / Phuket?",
+          q: "How much does a home solar system cost in Chiang Mai / Chiang Rai?",
           a: "For mid-to-large villas, a 5kW–10kW system typically costs around ฿120,000–฿220,000. Final pricing depends on roof structure, grid-connection conditions, and equipment brands. We offer free on-site surveys and quotes.",
         },
         {
@@ -160,7 +234,11 @@ const en = {
         },
         {
           q: "Do you handle the PEA grid-connection application?",
-          a: "Yes. We specialize in PEA grid-connection in provinces such as Chiang Mai, Chiang Rai, Phuket, and Pattaya. From drawings and meter changes to final approval, we handle everything for you.",
+          a: "Yes. We specialize in PEA grid-connection in Northern Thailand, including Chiang Mai, Chiang Rai, Lamphun, Lampang, and Phayao. From drawings and meter changes to final approval, we handle everything for you.",
+        },
+        {
+          q: "Can you visit Chiang Rai, Lamphun, Lampang, or Phayao?",
+          a: "Yes. Our Chiang Mai-based team can cover Chiang Rai, Lamphun, Lampang, Phayao, Mae Hong Son, and surrounding Northern Thailand areas. Visit timing depends on the project address, roof conditions, and installation schedule.",
         },
         {
           q: "Can you help with financing?",
@@ -174,18 +252,18 @@ const en = {
     projects: {
       headerTitle: "Projects",
       headerDesc:
-        "From sea-view villas in Pattaya to mountain homes in Chiang Mai — we’ve delivered reliable green energy for thousands of households and boutique businesses across Thailand.",
+        "From hillside villas in Chiang Mai to farm stays in Chiang Rai and small commercial rooftops in Lamphun and Lampang, we deliver reliable green energy for Northern Thailand homes and boutique businesses.",
       types: {
         residential: "Residential rooftop",
         commercial: "Small commercial",
       },
       items: [
-        { title: "Phuket sea-view villa solar", type: "residential" },
-        { title: "Doi Suthep hillside villa, Chiang Mai", type: "residential" },
-        { title: "Boutique resort hotel, Pattaya", type: "commercial" },
+        { title: "Mae Rim hillside villa solar, Chiang Mai", type: "residential" },
         { title: "Organic farm homestay, Chiang Rai", type: "commercial" },
-        { title: "Modern private home, Rawai Phuket", type: "residential" },
         { title: "Custom-built family home, Hang Dong", type: "residential" },
+        { title: "Small factory rooftop solar, Lamphun", type: "commercial" },
+        { title: "Boutique resort homestay, Lampang", type: "commercial" },
+        { title: "Modern private home, Rawai Phuket", type: "residential" },
       ],
     },
     pricing: {
@@ -220,7 +298,7 @@ const en = {
       notes: [
         "Prices are for reference; the final price is based on an on-site survey and written quote.",
         "Monthly generation is an estimate and depends on orientation, shading, and local irradiance.",
-        "If you’re in Chiang Mai / Chiang Rai / Phuket / Pattaya, we can arrange a local on-site evaluation.",
+        "If you’re in Chiang Mai / Chiang Rai / Lamphun / Lampang / Phayao or other Northern Thailand areas, we can arrange a local on-site evaluation.",
       ],
     },
     contact: {
@@ -229,7 +307,7 @@ const en = {
         "We’re ready to provide professional consultation and technical support. Fill out the form or call us — we’ll get back to you as soon as possible.",
       infoTitle: "Local service team",
       infoDesc:
-        "Our experts are based in Chiang Mai and Pattaya, enabling fast response across Northern Thailand and coastal resort areas.",
+        "Our experts are based in Chiang Mai, enabling fast response across Chiang Mai, Chiang Rai, Lamphun, Lampang, and other Northern Thailand areas, with selected coastal resort projects also supported.",
       officeHq: "Chiang Mai HQ",
       officeBranch: "Pattaya branch",
       phoneTitle: "Phone",
@@ -264,7 +342,7 @@ const en = {
     },
     footer: {
       brandDesc:
-        "We are a leading solar integrator in Thailand with service hubs in Chiang Mai, Phuket, and Pattaya, delivering worry-free green energy solutions for villas, homes, and boutique businesses.",
+        "We are a localized solar integrator for Northern Thailand, focused on Chiang Mai, Chiang Rai, Lamphun, and Lampang, delivering worry-free green energy solutions for villas, homes, farms, homestays, and boutique businesses.",
       quickLinks: "Quick links",
       coreServices: "Services",
       contact: "Contact",

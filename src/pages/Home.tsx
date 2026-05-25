@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Home as HomeIcon, Sun, Zap, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  Building2,
+  CheckCircle2,
+  ClipboardCheck,
+  Home as HomeIcon,
+  MapPin,
+  ShieldCheck,
+  Sun,
+  Zap,
+} from "lucide-react";
 import { useMemo, useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -44,6 +54,29 @@ export default function Home() {
   );
 
   const whyBullets = useMemo(() => t("home.why.bullets", { returnObjects: true }) as string[], [t]);
+
+  const northernAreas = useMemo(
+    () => t("home.northernThailand.areas", { returnObjects: true }) as string[],
+    [t]
+  );
+
+  const northernProjectTypes = useMemo(
+    () =>
+      t("home.northernThailand.projectTypes", { returnObjects: true }) as Array<{
+        title: string;
+        desc: string;
+      }>,
+    [t]
+  );
+
+  const northernProcess = useMemo(
+    () =>
+      t("home.northernThailand.process", { returnObjects: true }) as Array<{
+        title: string;
+        desc: string;
+      }>,
+    [t]
+  );
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -169,6 +202,71 @@ export default function Home() {
                 <p className="text-gray-600 leading-relaxed">{serviceCards[idx]?.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Northern Thailand GEO Section */}
+      <section className="py-16 md:py-24 bg-gray-50 border-y border-gray-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-10 lg:gap-14 items-start">
+            <div className="space-y-5">
+              <div className="inline-flex items-center gap-2 text-cola-blue font-semibold tracking-wider uppercase text-sm">
+                <MapPin className="w-4 h-4" />
+                {t("home.northernThailand.eyebrow")}
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+                {t("home.northernThailand.title")}
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                {t("home.northernThailand.desc")}
+              </p>
+              <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-4">{t("home.northernThailand.areaTitle")}</h3>
+                <div className="flex flex-wrap gap-2">
+                  {northernAreas.map((area) => (
+                    <span
+                      key={area}
+                      className="inline-flex items-center rounded-full bg-cola-blue/10 px-3.5 py-2 text-sm font-semibold text-cola-blue-dark"
+                    >
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-5">
+              <div className="grid sm:grid-cols-2 gap-5">
+                {northernProjectTypes.map((item, idx) => (
+                  <div key={item.title} className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+                    <div className="w-12 h-12 rounded-2xl bg-cola-blue/10 text-cola-blue flex items-center justify-center mb-4">
+                      {idx === 0 ? <HomeIcon className="w-6 h-6" /> : <Building2 className="w-6 h-6" />}
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
+                    <p className="mt-3 text-gray-600 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-cola-yellow/20 text-cola-blue-dark flex items-center justify-center">
+                    <ClipboardCheck className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">{t("home.northernThailand.processTitle")}</h3>
+                </div>
+                <div className="grid md:grid-cols-3 gap-4">
+                  {northernProcess.map((step, idx) => (
+                    <div key={step.title} className="rounded-2xl bg-gray-50 p-4">
+                      <div className="text-sm font-extrabold text-cola-blue">0{idx + 1}</div>
+                      <h4 className="mt-2 font-bold text-gray-900">{step.title}</h4>
+                      <p className="mt-2 text-sm text-gray-600 leading-relaxed">{step.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

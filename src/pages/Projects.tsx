@@ -11,56 +11,56 @@ export default function Projects() {
     {
       id: 1,
       title: projectCopy[0]?.title,
-      location: "Phuket, Thailand",
+      location: "Mae Rim, Chiang Mai",
       type: t(`projects.types.${projectCopy[0]?.type ?? "residential"}`),
-      capacity: "15 kW",
+      capacity: "8 kW",
       icon: <HomeIcon className="w-5 h-5" />,
-      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20pool%20villa%20in%20phuket%20with%20solar%20panels%20on%20roof%2C%20high%20quality&image_size=landscape_4_3"
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=mountain%20view%20villa%20in%20mae%20rim%20chiang%20mai%20with%20solar%20panels%20on%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 2,
       title: projectCopy[1]?.title,
-      location: "Chiang Mai, Thailand",
-      type: t(`projects.types.${projectCopy[1]?.type ?? "residential"}`),
-      capacity: "10 kW",
-      icon: <HomeIcon className="w-5 h-5" />,
-      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20house%20in%20chiang%20mai%20mountains%20with%20solar%20roof%2C%20high%20quality&image_size=landscape_4_3"
+      location: "Chiang Rai, Thailand",
+      type: t(`projects.types.${projectCopy[1]?.type ?? "commercial"}`),
+      capacity: "20 kW",
+      icon: <Building2 className="w-5 h-5" />,
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=organic%20farm%20homestay%20in%20chiang%20rai%20with%20solar%20panels%20on%20roof%2C%20northern%20thailand%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 3,
       title: projectCopy[2]?.title,
-      location: "Pattaya, Thailand",
-      type: t(`projects.types.${projectCopy[2]?.type ?? "commercial"}`),
-      capacity: "50 kW",
-      icon: <Building2 className="w-5 h-5" />,
-      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=boutique%20resort%20in%20pattaya%20with%20solar%20panels%2C%20tropical%2C%20high%20quality&image_size=landscape_4_3"
+      location: "Hang Dong, Chiang Mai",
+      type: t(`projects.types.${projectCopy[2]?.type ?? "residential"}`),
+      capacity: "12 kW",
+      icon: <HomeIcon className="w-5 h-5" />,
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=beautiful%20suburban%20family%20home%20in%20hang%20dong%20chiang%20mai%20with%20solar%20panels%20on%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 4,
       title: projectCopy[3]?.title,
-      location: "Chiang Rai, Thailand",
+      location: "Lamphun, Thailand",
       type: t(`projects.types.${projectCopy[3]?.type ?? "commercial"}`),
-      capacity: "20 kW",
+      capacity: "30 kW",
       icon: <Building2 className="w-5 h-5" />,
-      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=eco%20friendly%20homestay%20farm%20with%20solar%20panels%2C%20thailand%2C%20high%20quality&image_size=landscape_4_3"
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=small%20factory%20rooftop%20solar%20system%20in%20lamphun%20northern%20thailand%2C%20professional%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 5,
       title: projectCopy[4]?.title,
-      location: "Rawai, Phuket",
-      type: t(`projects.types.${projectCopy[4]?.type ?? "residential"}`),
-      capacity: "8 kW",
-      icon: <HomeIcon className="w-5 h-5" />,
-      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20minimalist%20house%20with%20solar%20roof%2C%20sunny%20day%2C%20high%20quality&image_size=landscape_4_3"
+      location: "Lampang, Thailand",
+      type: t(`projects.types.${projectCopy[4]?.type ?? "commercial"}`),
+      capacity: "18 kW",
+      icon: <Building2 className="w-5 h-5" />,
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=boutique%20resort%20homestay%20in%20lampang%20northern%20thailand%20with%20solar%20panels%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
       id: 6,
       title: projectCopy[5]?.title,
-      location: "Hang Dong, Chiang Mai",
+      location: "Rawai, Phuket",
       type: t(`projects.types.${projectCopy[5]?.type ?? "residential"}`),
-      capacity: "12 kW",
+      capacity: "8 kW",
       icon: <HomeIcon className="w-5 h-5" />,
-      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=beautiful%20suburban%20house%20with%20solar%20panels%20on%20roof%2C%20thailand%2C%20high%20quality&image_size=landscape_4_3"
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20minimalist%20house%20with%20solar%20roof%2C%20sunny%20day%2C%20high%20quality&image_size=landscape_4_3"
     }
   ];
 
