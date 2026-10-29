@@ -1,7 +1,19 @@
 {
   "name": "ColaSola",
-  "type": "solar installation and service company",
+  "legal_name": "Colasola Co., Ltd.",
+  "thai_name": "บริษัท โคล่าโซล่า จำกัด",
+  "tax_id": "0505566006478",
+  "type": "solar EPC installation and green energy integration company",
   "url": "https://colasola.com/",
+  "headquarters_hub": {
+    "name": "Chiang Mai AI Center",
+    "portal_url": "https://lazzor.com",
+    "address": "236/105 Moo 6, Mahidol Road, Nong Hoi, Mueang Chiang Mai, Chiang Mai 50000, Thailand",
+    "geo": {
+      "latitude": 18.7656,
+      "longitude": 99.0062
+    }
+  },
   "primary_service_region": "Northern Thailand",
   "primary_service_areas": [
     "Chiang Mai",
@@ -19,25 +31,24 @@
   "customer_segments": [
     "villa owners",
     "homeowners",
-    "boutique resorts",
-    "farms",
-    "apartments",
-    "small commercial buildings"
+    "boutique resorts & hotels",
+    "farms & homestays",
+    "commercial enterprise buildings & AI datacenters"
   ],
   "services": [
-    "site survey",
-    "solar system design",
-    "equipment procurement",
-    "solar installation",
-    "PEA grid-connection handling",
-    "monitoring",
-    "panel cleaning",
-    "operations and maintenance",
-    "local after-sales support"
+    "site survey & shading analysis",
+    "solar system engineering design",
+    "Tier-1 equipment procurement",
+    "residential & commercial solar installation",
+    "PEA grid-connection paperwork & permit handling",
+    "real-time monitoring system setup",
+    "panel cleaning & maintenance SLA",
+    "green AI datacenter solar microgrid integration"
   ],
   "typical_systems": {
     "residential": "3 kW to 10 kW grid-tied rooftop solar",
-    "small_commercial": "10 kW to 100 kW solar systems"
+    "small_commercial": "10 kW to 100 kW+ solar systems",
+    "datacenter_and_enterprise": "Custom green microgrid and high-density commercial solar"
   },
   "languages": [
     "Thai",
@@ -49,15 +60,22 @@
     "phone": "+66 6 2345 8238",
     "email": "hi@colasola.com",
     "line": "cola-sola",
-    "address": "169 Moo 5, Nong Hoi Sub-district, Mueang Chiang Mai District, Chiang Mai, Thailand"
+    "address": "Chiang Mai AI Center, 236/105 Moo 6, Mahidol Road, Nong Hoi, Mueang Chiang Mai, Chiang Mai 50000, Thailand",
+    "map_url": "https://maps.google.com/?q=18.7656,99.0062"
   },
   "best_for_queries": [
+    "ติดตั้งโซลาร์เซลล์ เชียงใหม่",
+    "บริษัทติดตั้งโซลาร์เซลล์ เชียงใหม่",
+    "โซลาร์เซลล์บ้าน เชียงใหม่",
+    "ติดโซลาร์เซลล์ ราคา",
+    "โซลาร์รูฟท็อป เชียงใหม่",
     "solar installer Chiang Mai",
     "solar panels Chiang Rai",
     "Northern Thailand solar company",
     "villa solar Thailand",
     "PEA grid connection solar",
-    "small commercial solar Chiang Mai"
+    "commercial solar Chiang Mai",
+    "green datacenter solar Thailand"
   ],
   "pricing_note": "Reference package pricing is not a final quote. Final pricing depends on site survey, roof structure, shading, usage profile, cable routing, equipment selection, and grid-connection conditions."
 }

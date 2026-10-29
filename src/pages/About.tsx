@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Leaf } from "lucide-react";
+import { Target, Leaf, Building2, ExternalLink } from "lucide-react";
 import { Trans, useTranslation } from "react-i18next";
 
 export default function About() {
@@ -64,6 +64,46 @@ export default function About() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Headquarters & Clean Tech Hub Section */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-3xl p-8 md:p-14 relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-96 h-96 bg-cola-blue/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="relative z-10 max-w-3xl space-y-6">
+              <div className="inline-flex items-center gap-2 bg-cola-blue/20 text-cola-blue border border-cola-blue/30 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase">
+                <Building2 className="w-4 h-4" />
+                <span>Headquarters & Clean Tech Hub</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                {t("about.hqTitle")}
+              </h2>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                {t("about.hqDesc")}
+              </p>
+              <div className="pt-2 flex flex-wrap items-center gap-4">
+                <a
+                  href="https://lazzor.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-cola-blue hover:bg-cola-blue-dark text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-md active:scale-95"
+                >
+                  <span>Visit Chiang Mai AI Center (lazzor.com)</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+                <span className="text-sm text-gray-400">
+                  236/105 Moo 6, Mahidol Rd, Nong Hoi, Chiang Mai 50000
+                </span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

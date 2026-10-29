@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -70,7 +70,19 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{t("contact.officeHq")}</h3>
-                    <p className="text-gray-600 leading-relaxed">169 Moo 5, Nong Hoi Sub-district,<br />Mueang Chiang Mai District, Chiang Mai</p>
+                    <p className="text-gray-600 leading-relaxed">
+                      Chiang Mai AI Center, 236/105 Moo 6,<br />
+                      Mahidol Road, Nong Hoi, Mueang Chiang Mai 50000
+                    </p>
+                    <a
+                      href="https://maps.google.com/?q=18.7656,99.0062"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-cola-blue hover:text-cola-blue-dark hover:underline mt-2 transition-colors"
+                    >
+                      <span>Google Maps (18.7656, 99.0062)</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </div>
                 </div>
 

@@ -183,6 +183,9 @@ const zh = {
         "深耕泰国市场多年后，我们发现许多公司习惯罗列复杂参数，却没有把真实节能效果说清楚。",
       storyP3:
         "因此，我们选择了一条不同的路：<strong>我们为结果负责。</strong> 完成能源审计后，我们会用清晰测算说明节电效果、投资回收期与质保方案，让客户在安装前就知道钱花在哪里、回报来自哪里。",
+      hqTitle: "创新园区与企业总部：清迈 AI 创新中心 (Chiang Mai AI Center)",
+      hqDesc:
+        "ColaSola 泰国总部坐落于清迈玛希敦路（Mahidol Rd）的 Chiang Mai AI Center (Lazzor)。作为该中心 1,600 平米高科技创新园区及 AI 算力机房的官方清洁能源提供商，我们在严苛的企业级场景验证了高可靠工程标准，并将同样的严谨品质赋予泰北的每一栋别墅与度假物业。",
       missionTitle: "我们的使命",
       missionDesc: "为泰国的家庭提供最高效、最实在的户用光伏系统解决方案，降低用电成本，普及绿色生活。",
       visionTitle: "我们的愿景",
@@ -257,6 +260,7 @@ const zh = {
         commercial: "小型商业",
       },
       items: [
+        { title: "清迈 AI 创新中心 (Lazzor Hub) - 科技园区与 AI 算力中心分布式光伏，玛希敦路", type: "commercial" },
         { title: "清迈湄林山景别墅光伏", type: "residential" },
         { title: "清莱有机农场民宿", type: "commercial" },
         { title: "清迈杭东家庭自建房", type: "residential" },
@@ -343,7 +347,7 @@ const zh = {
       coreServices: "核心服务",
       contact: "联系我们",
       serviceList: ["工程设计 (Engineering)", "采购与供应链 (Procurement)", "施工管理 (Construction)", "运维服务 (O&M)", "储能解决方案"],
-      chiangMaiHq: "清迈总部:",
+      chiangMaiHq: "清迈总部 (Chiang Mai AI Center):",
       pattayaBranch: "芭提雅分部:",
       privacy: "隐私政策",
       terms: "服务条款",

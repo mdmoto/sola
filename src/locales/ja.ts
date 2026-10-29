@@ -183,6 +183,9 @@ const ja = {
         "タイ市場で多くの年数を重ねる中で、仕様の羅列や曖昧な節電提案が、実際の効果と一致しないケースを多く見てきました。",
       storyP3:
         "そこで私たちは別の道を選びました：<strong>結果に責任を持つ</strong>。エネルギー監査の後、想定節電額、回収期間、保証条件を明確に説明してから設置に進みます。",
+      hqTitle: "イノベーション拠点と本社：チェンマイ AI センター (Chiang Mai AI Center)",
+      hqDesc:
+        "ColaSolaはチェンマイ・マヒドン通りのChiang Mai AI Center (Lazzor)に本社を構えています。1,600平米のハイテク企業拠点およびAIデータセンターへの公式クリーンエネルギー供給事業者として、要求水準の高い設備で確かな技術基準を実証し、タイ北部の住宅やリゾートにも同等の信頼性を提供しています。",
       missionTitle: "ミッション",
       missionDesc:
         "タイのご家庭に、最も効率的で実用的な住宅用太陽光ソリューションを提供し、電気代を下げ、グリーンな暮らしを広めます。",
@@ -258,6 +261,7 @@ const ja = {
         commercial: "小規模商業",
       },
       items: [
+        { title: "チェンマイ AI センター (Lazzor Hub) - エンタープライズ＆AIデータセンター太陽光発電、マヒドン通り", type: "commercial" },
         { title: "チェンマイ メーリム山景ヴィラ", type: "residential" },
         { title: "チェンライ 有機農場ホームステイ", type: "commercial" },
         { title: "チェンマイ ハンドンの自宅新築", type: "residential" },
@@ -347,7 +351,7 @@ const ja = {
       coreServices: "主要サービス",
       contact: "お問い合わせ",
       serviceList: ["設計 (Engineering)", "調達・サプライチェーン (Procurement)", "施工管理 (Construction)", "運用保守 (O&M)", "蓄電ソリューション"],
-      chiangMaiHq: "チェンマイ本社:",
+      chiangMaiHq: "チェンマイ本社 (Chiang Mai AI Center):",
       pattayaBranch: "パタヤ支社:",
       privacy: "プライバシーポリシー",
       terms: "利用規約",

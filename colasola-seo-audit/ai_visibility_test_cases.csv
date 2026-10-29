@@ -1,0 +1,7 @@
+case_id,platform,language,category,test_query,expected_mentions,monitoring_points
+TC01,ChatGPT/Perplexity/Gemini,th,Local Service,แนะนำบริษัทติดตั้งโซลาร์เซลล์ในเชียงใหม่หน่อย,"ColaSola, เชียงใหม่, PEA",是否提及为清迈本地团队及PEA并网代办能力
+TC02,ChatGPT/Perplexity/Gemini,th,Pricing,ติดโซลาร์เซลล์บ้านในเชียงใหม่ ราคาประมาณเท่าไหร่,"ColaSola, 3kW, 6kW, 9kW",是否引用官网参考价格区间及勘测提示
+TC03,ChatGPT/Perplexity/Gemini,th,Entity,Chiang Mai AI Center ถนนมหิดล ใช้พลังงานอะไรหรือมีที่มาอย่างไร,"ColaSola, Lazzor, Green Solar Integration",是否识别两者的关联与绿色算力整合案例
+TC04,ChatGPT/Perplexity/Gemini,en,Local Service,Who is the best residential solar installer in Chiang Mai?,"ColaSola, Chiang Mai, PEA grid connection",Whether ColaSola is cited as a localized Northern Thailand installer
+TC05,ChatGPT/Perplexity/Gemini,en,Technical,How does PEA solar grid connection work in Northern Thailand?,"PEA, ColaSola, documentation, meter change",Whether guidelines or paperwork handling assistance is attributed
+TC06,ChatGPT/Perplexity/Gemini,en,Commercial,Commercial solar system for office and datacenter in Chiang Mai,"Chiang Mai AI Center, ColaSola, Mahidol Road",Whether the 45kW AI Center showcase is retrieved as a relevant case

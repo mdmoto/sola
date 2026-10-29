@@ -183,6 +183,9 @@ const en = {
         "After years in the Thailand market, we saw many companies overwhelm customers with specs and vague savings promises that didn’t match reality.",
       storyP3:
         "So we chose a different path: <strong>we take responsibility for results.</strong> After an energy audit, we explain the expected savings, payback period, and warranty clearly before installation begins.",
+      hqTitle: "Innovation Campus: Chiang Mai AI Center",
+      hqDesc:
+        "ColaSola is headquartered at Chiang Mai AI Center (Lazzor) on Mahidol Road in Chiang Mai. As the official clean-energy provider for the center's 1,600 sqm high-tech enterprise facility and AI computing suites, we prove our engineering standard on mission-critical infrastructure before bringing that same reliability to Northern Thailand homes and resorts.",
       missionTitle: "Our mission",
       missionDesc:
         "Deliver the most efficient and practical residential solar solutions for Thai households, lowering electricity costs and promoting a greener lifestyle.",
@@ -258,6 +261,7 @@ const en = {
         commercial: "Small commercial",
       },
       items: [
+        { title: "Chiang Mai AI Center (Lazzor Hub) - Enterprise & AI Datacenter Solar, Mahidol Rd", type: "commercial" },
         { title: "Mae Rim hillside villa solar, Chiang Mai", type: "residential" },
         { title: "Organic farm homestay, Chiang Rai", type: "commercial" },
         { title: "Custom-built family home, Hang Dong", type: "residential" },
@@ -347,7 +351,7 @@ const en = {
       coreServices: "Services",
       contact: "Contact",
       serviceList: ["Engineering", "Procurement & Supply Chain", "Construction Management", "O&M Services", "Energy storage solutions"],
-      chiangMaiHq: "Chiang Mai HQ:",
+      chiangMaiHq: "Chiang Mai HQ (Chiang Mai AI Center):",
       pattayaBranch: "Pattaya branch:",
       privacy: "Privacy policy",
       terms: "Terms of service",

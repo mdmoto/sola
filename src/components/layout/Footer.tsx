@@ -77,6 +77,17 @@ export default function Footer() {
               <li>
                 <Link to="/careers" className="text-sm hover:text-cola-blue transition-colors">{t("nav.careers")}</Link>
               </li>
+              <li className="pt-2 border-t border-gray-800">
+                <a 
+                  href="https://lazzor.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>Chiang Mai AI Center (lazzor.com) ↗</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -98,7 +109,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-cola-blue shrink-0 mt-0.5" />
                 <span className="text-sm leading-relaxed">
                   {t("footer.chiangMaiHq")}<br />
-                  169 Moo 5, Nong Hoi, Mueang Chiang Mai
+                  Chiang Mai AI Center, 236/105 Moo 6, Mahidol Rd, Nong Hoi, Chiang Mai 50000
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -122,7 +133,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-800 text-center text-sm text-gray-500 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p>&copy; {new Date().getFullYear()} ColaSola. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ColaSola (Colasola Co., Ltd.). All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">{t("footer.privacy")}</a>
             <a href="#" className="hover:text-white transition-colors">{t("footer.terms")}</a>

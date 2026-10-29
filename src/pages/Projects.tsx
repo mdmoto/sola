@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Zap, Home as HomeIcon, Building2 } from "lucide-react";
+import { MapPin, Zap, Home as HomeIcon, Building2, ExternalLink } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function Projects() {
@@ -11,53 +11,63 @@ export default function Projects() {
     {
       id: 1,
       title: projectCopy[0]?.title,
+      location: "Mahidol Road, Chiang Mai",
+      type: t(`projects.types.${projectCopy[0]?.type ?? "commercial"}`),
+      capacity: "45 kW",
+      link: "https://lazzor.com",
+      icon: <Building2 className="w-5 h-5" />,
+      img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20commercial%20technology%20office%20building%20with%20rooftop%20solar%20panels%2C%20chiang%20mai%20thailand%2C%20sunny%20day%2C%20high%20quality&image_size=landscape_4_3"
+    },
+    {
+      id: 2,
+      title: projectCopy[1]?.title,
       location: "Mae Rim, Chiang Mai",
-      type: t(`projects.types.${projectCopy[0]?.type ?? "residential"}`),
+      type: t(`projects.types.${projectCopy[1]?.type ?? "residential"}`),
       capacity: "8 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=mountain%20view%20villa%20in%20mae%20rim%20chiang%20mai%20with%20solar%20panels%20on%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
-      id: 2,
-      title: projectCopy[1]?.title,
+      id: 3,
+      title: projectCopy[2]?.title,
       location: "Chiang Rai, Thailand",
-      type: t(`projects.types.${projectCopy[1]?.type ?? "commercial"}`),
+      type: t(`projects.types.${projectCopy[2]?.type ?? "commercial"}`),
       capacity: "20 kW",
       icon: <Building2 className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=organic%20farm%20homestay%20in%20chiang%20rai%20with%20solar%20panels%20on%20roof%2C%20northern%20thailand%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
-      id: 3,
-      title: projectCopy[2]?.title,
+      id: 4,
+      title: projectCopy[3]?.title,
       location: "Hang Dong, Chiang Mai",
-      type: t(`projects.types.${projectCopy[2]?.type ?? "residential"}`),
+      type: t(`projects.types.${projectCopy[3]?.type ?? "residential"}`),
       capacity: "12 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=beautiful%20suburban%20family%20home%20in%20hang%20dong%20chiang%20mai%20with%20solar%20panels%20on%20roof%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
-      id: 4,
-      title: projectCopy[3]?.title,
+      id: 5,
+      title: projectCopy[4]?.title,
       location: "Lamphun, Thailand",
-      type: t(`projects.types.${projectCopy[3]?.type ?? "commercial"}`),
+      type: t(`projects.types.${projectCopy[4]?.type ?? "commercial"}`),
       capacity: "30 kW",
       icon: <Building2 className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=small%20factory%20rooftop%20solar%20system%20in%20lamphun%20northern%20thailand%2C%20professional%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
-      id: 5,
-      title: projectCopy[4]?.title,
+      id: 6,
+      title: projectCopy[5]?.title,
       location: "Lampang, Thailand",
-      type: t(`projects.types.${projectCopy[4]?.type ?? "commercial"}`),
+      type: t(`projects.types.${projectCopy[5]?.type ?? "commercial"}`),
       capacity: "18 kW",
       icon: <Building2 className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=boutique%20resort%20homestay%20in%20lampang%20northern%20thailand%20with%20solar%20panels%2C%20high%20quality&image_size=landscape_4_3"
     },
     {
-      id: 6,
-      title: projectCopy[5]?.title,
+      id: 7,
+      title: projectCopy[6]?.title,
       location: "Rawai, Phuket",
-      type: t(`projects.types.${projectCopy[5]?.type ?? "residential"}`),
+      type: t(`projects.types.${projectCopy[6]?.type ?? "residential"}`),
       capacity: "8 kW",
       icon: <HomeIcon className="w-5 h-5" />,
       img: "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20minimalist%20house%20with%20solar%20roof%2C%20sunny%20day%2C%20high%20quality&image_size=landscape_4_3"
@@ -118,6 +128,17 @@ export default function Projects() {
                     <MapPin className="w-5 h-5 shrink-0" />
                     <span>{project.location}</span>
                   </div>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-cola-blue hover:text-cola-blue-dark mt-4 transition-colors"
+                    >
+                      <span>Chiang Mai AI Center (lazzor.com)</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}
