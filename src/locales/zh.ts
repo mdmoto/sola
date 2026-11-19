@@ -400,7 +400,7 @@ const zh = {
       ctaTitle: "准备好加入 ColaSola 了吗？",
       ctaDesc: "发送您的简历，让我们一起构建绿色未来。",
       ctaEmail: "hi@colasola.com",
-      ctaPhone: "+66 6 2345 8238",
+      ctaPhone: "+66 927-688255",
     },
   },
 } as const;

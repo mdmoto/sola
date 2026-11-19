@@ -8,7 +8,7 @@ export const businessProfile = {
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   email: "hi@colasola.com",
-  telephone: "+66 6 2345 8238",
+  telephone: "+66 927-688255",
   lineId: "cola-sola",
   address: {
     streetAddress: "236/105 Moo 6, Mahidol Road, Nong Hoi",

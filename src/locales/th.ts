@@ -404,7 +404,7 @@ const th = {
       ctaTitle: "พร้อมที่จะร่วมงานกับ ColaSola หรือยัง?",
       ctaDesc: "ส่งประวัติของคุณมาที่เรา แล้วมาร่วมสร้างอนาคตสีเขียวไปด้วยกัน",
       ctaEmail: "hi@colasola.com",
-      ctaPhone: "+66 6 2345 8238",
+      ctaPhone: "+66 927-688255",
     },
   },
 } as const;

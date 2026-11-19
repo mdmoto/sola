@@ -404,7 +404,7 @@ const en = {
       ctaTitle: "Ready to Join ColaSola?",
       ctaDesc: "Send us your resume and let's build a greener future together.",
       ctaEmail: "hi@colasola.com",
-      ctaPhone: "+66 6 2345 8238",
+      ctaPhone: "+66 927-688255",
     },
   },
 } as const;
