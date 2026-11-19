@@ -9,6 +9,12 @@ const ja = {
       contact: "お問い合わせ",
       getQuote: "見積もり",
       careers: "採用情報",
+      backToCmai: "← AIセンター主サイトへ",
+      cmaiHome: "チェンマイAIセンター (lazzor.com)",
+      cmaiWorkspace: "オフィススペース (Workspace)",
+      cmaiCloud: "企業向けAIクラウド (Cloud)",
+      cmaiAiSandbox: "AI意思決定サンドボックス",
+      ecosystemTitle: "チェンマイAIセンター エコシステム",
     },
     seo: {
       defaultDescription:

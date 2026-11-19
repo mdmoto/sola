@@ -9,6 +9,12 @@ const zh = {
       contact: "联系我们",
       getQuote: "获取方案",
       careers: "招聘",
+      backToCmai: "← 返回 AI 园区主站",
+      cmaiHome: "清迈 AI 园区官网",
+      cmaiWorkspace: "独栋办公空间 (Workspace)",
+      cmaiCloud: "企业级海外云工位 (Cloud)",
+      cmaiAiSandbox: "AI 商业决策沙盘",
+      ecosystemTitle: "Chiang Mai AI Center 园区矩阵",
     },
     seo: {
       defaultDescription:

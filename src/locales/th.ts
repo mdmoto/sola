@@ -9,6 +9,12 @@ const th = {
       contact: "ติดต่อเรา",
       getQuote: "ขอใบเสนอราคา",
       careers: "ร่วมงานกับเรา",
+      backToCmai: "← กลับสู่ศูนย์ AI หลัก",
+      cmaiHome: "ศูนย์ AI เชียงใหม่ (lazzor.com)",
+      cmaiWorkspace: "พื้นที่สำนักงาน (Workspace)",
+      cmaiCloud: "คลาวด์เวิร์กสเตชัน (Cloud)",
+      cmaiAiSandbox: "แซนด์บ็อกซ์การตัดสินใจ AI",
+      ecosystemTitle: "ระบบนิเวศศูนย์ AI เชียงใหม่",
     },
     seo: {
       defaultDescription:

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, ArrowUpRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -67,17 +67,32 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="flex items-center group">
-          <img 
-            src="/logo.png" 
-            alt="ColaSola Logo" 
-            className="h-10 md:h-12 w-auto object-contain"
-          />
-        </Link>
+        {/* Logo and Ecosystem Back-Link */}
+        <div className="flex items-center gap-3 md:gap-4">
+          <Link to="/" className="flex items-center group">
+            <img 
+              src="/logo.png" 
+              alt="ColaSola Logo" 
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+          </Link>
+
+          <div className="hidden lg:block h-6 w-px bg-gray-200" />
+
+          {/* Direct jump back to Chiang Mai AI Center / lazzor.com */}
+          <a
+            href="https://lazzor.com"
+            className="hidden lg:inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 hover:text-cola-blue bg-gray-50 hover:bg-gray-100/90 px-3 py-1.5 rounded-full border border-gray-200 transition-all shadow-2xs group/back"
+            title="Chiang Mai AI Center (lazzor.com)"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span>{t("nav.backToCmai")}</span>
+            <ArrowUpRight className="w-3 h-3 text-gray-400 group-hover/back:text-cola-blue transition-colors" />
+          </a>
+        </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -99,6 +114,15 @@ export default function Navbar() {
               )}
             </Link>
           ))}
+
+          {/* Cross-ecosystem link to AI Center */}
+          <a
+            href="https://lazzor.com"
+            className="hidden xl:inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-cola-blue transition-colors py-2"
+          >
+            <span>{t("nav.cmaiHome")}</span>
+            <ArrowUpRight className="w-3.5 h-3.5 text-gray-400" />
+          </a>
           
           {/* Language Switcher Desktop */}
           <div className="relative ml-2">
@@ -164,7 +188,50 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
-            <div className="flex flex-col px-4 py-6 gap-4">
+            <div className="flex flex-col px-4 py-6 gap-3">
+              {/* Parent Ecosystem Banner in Mobile Drawer */}
+              <div className="p-3.5 bg-gray-50/90 rounded-2xl border border-gray-200/80 mb-1">
+                <div className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2.5 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    {t("nav.ecosystemTitle")}
+                  </span>
+                  <span className="text-[10px] text-gray-400 font-mono">lazzor.com</span>
+                </div>
+                <div className="grid grid-cols-1 gap-1.5">
+                  <a
+                    href="https://lazzor.com"
+                    className="flex items-center justify-between px-3 py-2 text-xs font-medium text-gray-800 bg-white rounded-xl border border-gray-100 hover:bg-gray-50 hover:text-cola-blue transition-colors shadow-2xs"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="text-sm">🏛️</span>
+                      <span>{t("nav.cmaiHome")}</span>
+                    </span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-gray-400" />
+                  </a>
+                  <a
+                    href="https://lazzor.com/workspace"
+                    className="flex items-center justify-between px-3 py-2 text-xs font-medium text-gray-800 bg-white rounded-xl border border-gray-100 hover:bg-gray-50 hover:text-cola-blue transition-colors shadow-2xs"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="text-sm">🏢</span>
+                      <span>{t("nav.cmaiWorkspace")}</span>
+                    </span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-gray-400" />
+                  </a>
+                  <a
+                    href="https://cloud.lazzor.com"
+                    className="flex items-center justify-between px-3 py-2 text-xs font-medium text-gray-800 bg-white rounded-xl border border-gray-100 hover:bg-gray-50 hover:text-cola-blue transition-colors shadow-2xs"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span className="text-sm">⚡</span>
+                      <span>{t("nav.cmaiCloud")}</span>
+                    </span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-gray-400" />
+                  </a>
+                </div>
+              </div>
+
               {navLinks.map((link) => (
                 <Link
                   key={link.path}

@@ -85,7 +85,40 @@ export default function Footer() {
                   className="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                  <span>Chiang Mai AI Center (lazzor.com) ↗</span>
+                  <span>{t("nav.cmaiHome")} (lazzor.com) ↗</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://lazzor.com/workspace" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                  <span>{t("nav.cmaiWorkspace")} ↗</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://cloud.lazzor.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                  <span>{t("nav.cmaiCloud")} ↗</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://ai.lazzor.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                  <span>{t("nav.cmaiAiSandbox")} ↗</span>
                 </a>
               </li>
             </ul>

@@ -9,6 +9,12 @@ const en = {
       contact: "Contact",
       getQuote: "Get Quote",
       careers: "Careers",
+      backToCmai: "← Back to AI Center",
+      cmaiHome: "Chiang Mai AI Center",
+      cmaiWorkspace: "Office Workspace",
+      cmaiCloud: "Enterprise Cloud Workstation",
+      cmaiAiSandbox: "AI Decision Sandbox",
+      ecosystemTitle: "AI Center Ecosystem",
     },
     seo: {
       defaultDescription:
